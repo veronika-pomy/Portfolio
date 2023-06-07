@@ -9,7 +9,8 @@ module.exports = {
         red: "#ac5159",
         dark: "#2d3033",
         light: "#f0f0f0",
-        blue: "#7d9fb9"
+        blue: "#7d9fb9",
+        grey: "#71717a"
       },
       fontFamily: {
         crimson: ["Crimson Text","serif"],

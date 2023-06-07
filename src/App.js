@@ -1,7 +1,6 @@
 import NavBar from './pages/NavBar';
 
 import { useEffect, useState } from 'react';
-import useMediaQuery from './hooks/useMediaQuery';
 
 function App() {
 
@@ -11,8 +10,7 @@ function App() {
   // changes navbar attrs when scrolling 
   const [ topOfPage, setTopOfPage ] = useState(true);
 
-  // determine current browser size 
-  const isAboveMediumScreen = useMediaQuery("(min-width: 768px)");
+  // set up context for theme switch
 
   // handle scrolling page down, navbar appearance
   useEffect(() => {
@@ -28,8 +26,12 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-  
+    <div className="app bg-light">
+      <NavBar
+        topOfPage={topOfPage}
+        activePage={activePage}
+        setActivePage={setActivePage}
+      />
     </div>
   );
 }
