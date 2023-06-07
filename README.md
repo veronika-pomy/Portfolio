@@ -43,7 +43,7 @@ If you have any questions regarding this project, please don't hesitate to conta
 - https://www.npmjs.com/package/react-anchor-link-smooth-scroll
 - https://www.npmjs.com/package/react-hook-form
 
-### Attributions for icons used for projects
+### Project Icons
 
 - https://www.flaticon.com/authors/eideticmemo
 - https://www.flaticon.com/authors/freepik
