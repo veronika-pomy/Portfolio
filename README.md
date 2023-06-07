@@ -1,10 +1,40 @@
-# Veronika Pomyateeva - Developer Portfolio
+# Veronika Pomyateeva Portfolio
 
-## Technologies & Franeworks
+## Description
 
-Node - https://nodejs.org/en
-React - https://react.dev/
-Tailwind - https://tailwindcss.com/
+## Table of Contents
+
+  <ul>
+    <li>
+      <a href="#description">Description</a>
+    </li>
+    <li>
+      <a href="#demo">Demo</a>
+    </li>
+    <li>
+        <a href="#questions">Questions</a>
+    </li>
+    <li>
+        <a href="#acknowledgments">Acknowledgements</a>
+    </li>
+  </ul>
+
+## Demo
+
+- Screenshot
+- Link
+
+## Questions
+
+If you have any questions regarding this project, please don't hesitate to contact me using my email address: pomyateevav@gmail.com. You can find my project repositories here: [veronika-pomy](https://github.com/veronika-pomy?tab=repositories).
+
+## Acknowledgments
+
+### Technologies & Frameworks
+
+- Node - https://nodejs.org/en
+- React - https://react.dev/
+- Tailwind - https://tailwindcss.com/
 
 ### Libraries
 
@@ -24,3 +54,5 @@ Tailwind - https://tailwindcss.com/
 - https://fonts.google.com/specimen/Mukta+Mahee
 
 ### React Icons
+
+<p align="right">(<a href="#veronika-pomyateeva-portfolio">back to top</a>)</p>
