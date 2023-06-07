@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Mukta+Mahee:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* global css rules  */
+html, 
+body,
+#root,
+.app {
+    height: 100%;
+}
