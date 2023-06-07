@@ -1,8 +1,17 @@
 # Veronika Pomyateeva - Developer Portfolio
 
-## Technologies
+## Technologies & Franeworks
 
-## Libraries
+Node - https://nodejs.org/en
+React - https://react.dev/
+Tailwind - https://tailwindcss.com/
+
+### Libraries
+
+- https://www.framer.com/motion/
+- https://www.npmjs.com/package/gh-pages
+- https://www.npmjs.com/package/react-anchor-link-smooth-scroll
+- https://www.npmjs.com/package/react-hook-form
 
 ### Attributions for icons used for projects
 
