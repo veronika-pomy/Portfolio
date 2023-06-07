@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-// setting breakpoint for screen resizing - hook will return true when passed query matches screen size
+// setting breakpoint for screen resizing
+// hook tells when passed query matches screen size
 
 const useMediaQuery = (query) => {
     const [matches, setMatches] = useState(false);
