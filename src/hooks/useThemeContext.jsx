@@ -6,7 +6,7 @@ export const useThemeContext = () => useContext(ThemeContext);
 
 export default function ThemeProvider ({children}) {
     
-    const [ darkTheme, setDarkTheme ] = useState(true);
+    const [ darkTheme, setDarkTheme ] = useState(false);
 
     //method to update theme state
     const toggleTheme = () => {

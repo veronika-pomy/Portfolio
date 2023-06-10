@@ -49,8 +49,8 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
   const { darkTheme } = useThemeContext();
 
   // changing navbar opacity on scroll
-  const navBackgroundLight = topOfPage ? "bg-light" : "bg-light";
-  const navBackgroundDark = topOfPage ? "bg-dark" : "bg-dark";
+  const navBackgroundLight = topOfPage ? "bg-light" : "bg-light-opacity-50";
+  const navBackgroundDark = topOfPage ? "bg-dark" : "bg-dark-opacity-50";
 
   return (
     <nav 
