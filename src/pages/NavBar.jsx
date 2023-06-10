@@ -5,11 +5,12 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
+import { useThemeContext } from '../hooks/useThemeContext';
 
 // Link for menu items
 const Link = ({ page, activePage, setActivePage }) => {
-    
-  const pageLowerCase = page.toLowerCase();
+
+    const pageLowerCase = page.toLowerCase();
 
   // go to specified part of the page
   return (
@@ -45,13 +46,18 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
   // mobile screens
   const [ isNavToggled, setIsNavToggled ] = useState(false);
   const isAboveSmallScreen = useMediaQuery("(min-width: 1024px)");
+  const { darkTheme } = useThemeContext();
 
   // changing navbar opacity on scroll
-  const navBackground = topOfPage ? "bg-light" : "bg-light-opacity-50";
+  const navBackgroundLight = topOfPage ? "bg-light" : "bg-light";
+  const navBackgroundDark = topOfPage ? "bg-dark" : "bg-dark";
 
   return (
     <nav 
-      className={(isNavToggled && !isAboveSmallScreen ? 'z-40 w-full fixed top-0 py-6' : `${navBackground} z-40 w-full fixed top-0 py-6`)}
+      className={
+        (!darkTheme ? `${navBackgroundDark} ` : `${navBackgroundLight} `) + 
+        (isNavToggled && !isAboveSmallScreen ? 'z-40 w-full fixed top-0 py-6' : `z-40 w-full fixed top-0 py-6`)
+        }
     >
       <div
         className="flex items-center justify-between mx-auto w-4/6"
@@ -68,7 +74,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         {isAboveSmallScreen ? 
                 (
                     <div
-                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-lg font-semibold"
+                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-xl"
                     >
                         <Link 
                             page="About"
