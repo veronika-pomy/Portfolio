@@ -55,7 +55,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
   return (
     <nav 
       className={
-        (!darkTheme ? `${navBackgroundDark} ` : `${navBackgroundLight} `) + 
+        (!darkTheme ? `${navBackgroundLight} ` : `${navBackgroundDark} `) + 
         (isNavToggled && !isAboveSmallScreen ? 'z-40 w-full fixed top-0 py-6' : `z-40 w-full fixed top-0 py-6`)
         }
     >

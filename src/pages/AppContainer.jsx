@@ -27,7 +27,7 @@ const AppContainer = () => {
   }, []);
 
   return (
-          <div className={(darkTheme ? 'bg-light text-dark app' : 'bg-dark text-light app' )}>
+          <div className={(!darkTheme ? 'bg-light text-dark app' : 'bg-dark text-light app' )}>
             <NavBar
               topOfPage={topOfPage}
               activePage={activePage}
