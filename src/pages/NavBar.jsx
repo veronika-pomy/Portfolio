@@ -11,13 +11,15 @@ import { useThemeContext } from '../hooks/useThemeContext';
 const Link = ({ page, activePage, setActivePage }) => {
 
     const pageLowerCase = page.toLowerCase();
+    const { darkTheme } = useThemeContext();
 
   // go to specified part of the page
   return (
+    
       <AnchorLink
           className={`
               ${activePage === pageLowerCase ? "blue" : ""}
-              hover:text-blue
+              ${darkTheme ? 'hover:text-red ' : 'hover:text-blue ' }
               transition
               duration-500
           `}
