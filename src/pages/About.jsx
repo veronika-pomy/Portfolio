@@ -12,7 +12,7 @@ const About = ({ setActivePage }) => {
     const { darkTheme } = useThemeContext();
 
     return (
-        <section id='home' className="lg:flex md:justify-between md:items-center lg:h-full gap-16 py-10">    
+        <section id='about' className="lg:flex md:justify-between md:items-center lg:h-full gap-16 py-10">    
             {/* IMAGE */}
             {/* order two allow it to be on the right of text when screen is large but on top when screen is small */}
             <div className="md:order-2 flex justify-center lg:justify-end basis-4/6 z-10 mt-16 mb-10 md:mt-32 md:mb-24">
@@ -140,7 +140,7 @@ const About = ({ setActivePage }) => {
                                 hidden lg:block absolute bottom-0 left-0
                             "
                     src={`${(darkTheme ? accentDark : accentLight)}`}
-                    />
+                />
             </div>
         </section>
     );

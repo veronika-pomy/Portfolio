@@ -1,5 +1,6 @@
 import NavBar from './NavBar';
 import About from './About';
+import Projects from './Projects';
 
 import { useEffect, useState } from 'react';
 import { useThemeContext } from '../hooks/useThemeContext'
@@ -35,8 +36,11 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
-            <div className="w-4/6 mx-auto h-screen">
+            <div className="w-4/6 mx-auto lg:h-full">
               <About setActivePage={setActivePage} />
+              <div className="w-5/6 mx-auto ">
+                <Projects />
+              </div>
             </div>
           </div>
   )
