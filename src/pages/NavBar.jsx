@@ -118,13 +118,13 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
                         // this resets nav based on user clicking on nav on mobile
                         onClick = {() => setIsNavToggled(!isNavToggled)}
                     >
-                        <AiOutlineMenu size={32} />
+                        <AiOutlineMenu className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={32} />
                     </button>
                 )
             }
 
         {/* MOBILE */}
-        {! isAboveSmallScreen && isNavToggled &&
+        {!isAboveSmallScreen && isNavToggled &&
                 (
                     <div 
                         className={`
@@ -137,7 +137,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
                             <button
                                 onClick={() => setIsNavToggled(!isNavToggled)}
                             >
-                                <AiOutlineClose size={26} />
+                                <AiOutlineClose className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={26} />
                             </button>
                         </div>
                         

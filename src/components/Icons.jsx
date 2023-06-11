@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const SocialIcons = () => {
   return (
     <div
-      className="flex justify-center md:justify-start my-10 gap-4"
+      className="flex justify-center lg:justify-start my-10 gap-4"
     >
       <a
         className="hover:opacity-50 transition duration-500"

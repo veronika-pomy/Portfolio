@@ -35,7 +35,7 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
-            <div className="w-4/6 mx-auto md:h-full">
+            <div className="w-4/6 mx-auto h-screen">
               <About setActivePage={setActivePage} />
             </div>
           </div>
