@@ -42,158 +42,161 @@ const Projects = () => {
     const { darkTheme } = useThemeContext();
 
     return (
-        <section id="projects" className="pt-48 pb-48">
-             <div>
+        <>
+            <div>
                 <img
                     alt="Color accent for the Projects page"
                     className="
-                                 absolute top-50 left-0 z-40
+                                 absolute left-0 
                             "
                     src={`${(darkTheme ? accentDark : accentLight)}`}
                 />
             </div>
-            {/* HEADER */}
-            <motion.div
-                className="md:w-2/4 mx-auto text-center"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
-                variants={{
-                    hidden: { opacity: 0, y: -50 },
-                    visible:{ opacity: 1, y: 0 }
-                }}
-            >
-                <div>
-                    <p className="font-crimson font-semibold text-5xl">
-                        MY <span className="text-gold">PROJECTS</span>
-                    </p>
-                </div>
-            </ motion.div>
-            {/* PROJECTS */}
-            <div className="flex felx-col md:flex-row justify-center">
-                {/* set grid system for sceens above small to align project screenshots */}
+            <section id="projects" className="pt-48 pb-48">
+                
+                {/* HEADER */}
                 <motion.div
-                    className="md:grid md:grid-cols-3"
+                    className="md:w-2/4 mx-auto text-center"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
-                    variants={
-                        container
-                    }
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, y: -50 },
+                        visible:{ opacity: 1, y: 0 }
+                    }}
                 >
-                    {/* child behaves based on what it detect from parent el */}
+                    <div>
+                        <p className="font-crimson font-semibold text-5xl">
+                            MY <span className="text-gold">PROJECTS</span>
+                        </p>
+                    </div>
+                </ motion.div>
+                {/* PROJECTS */}
+                <div className="flex felx-col md:flex-row justify-center">
+                    {/* set grid system for sceens above small to align project screenshots */}
                     <motion.div
-                        variants={projectTransition}
-                        className="relative m-4"
+                        className="md:grid md:grid-cols-3"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={
+                            container
+                        }
                     >
-                        <div className={overlayStyleLight}>
-                            <p className="text-2xl font-playfair">
-                                Pet Services
-                            </p>
-                            <p className="mt-7 py-0.5">
-                                MERN / GraphQl / Tailwind
-                            </p>
-                            <a
-                                href='https://pet-services.herokuapp.com/'
-                                target="_blank" 
-                                rel="noreferrer" 
-                                className="underline py-0.5"
-                            >
-                                Deployed App
-                            </a>
-                            <div className="flex justify-center py-0.5">
+                        {/* child behaves based on what it detect from parent el */}
+                        <motion.div
+                            variants={projectTransition}
+                            className="relative m-4"
+                        >
+                            <div className={overlayStyleLight}>
+                                <p className="text-2xl font-playfair">
+                                    Pet Services
+                                </p>
+                                <p className="mt-7 py-0.5">
+                                    MERN / GraphQl / Tailwind
+                                </p>
                                 <a
-                                    className="hover:opacity-50 selftransition duration-500"
-                                    href="https://github.com/dltorrise/Pet-Services"
+                                    href='https://pet-services.herokuapp.com/'
                                     target="_blank" 
-                                    rel="noreferrer"
+                                    rel="noreferrer" 
+                                    className="underline py-0.5"
                                 >
-                                    <AiFillGithub size={24} />
+                                    Deployed App
                                 </a>
+                                <div className="flex justify-center py-0.5">
+                                    <a
+                                        className="hover:opacity-50 selftransition duration-500"
+                                        href="https://github.com/dltorrise/Pet-Services"
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <AiFillGithub size={24} />
+                                    </a>
+                                </div>
+                                
                             </div>
-                            
-                        </div>
-                        <img 
-                            alt='Landing page for Pet Services web app featuring a map, a dog and a cat, and a link to log in or create an account'
-                            src={`${project1}`}
-                        />
-                    </motion.div>
-                    <motion.div
-                        variants={projectTransition}
-                        className="relative m-4"
-                    >
-                        <div className={overlayStyleLight}>
-                            <p className="text-2xl font-playfair">
-                                FitnessGram
-                            </p>
-                            <p className="mt-7 py-0.5">
-                                Node / Express / MySQL / Bootstrap
-                            </p>
-                            <a
-                                href='https://fitnessgram.herokuapp.com/login'
-                                target="_blank" 
-                                rel="noreferrer" 
-                                className="underline py-0.5"
-                            >
-                                Deployed App
-                            </a>
-                            <div className="flex justify-center py-0.5">
+                            <img 
+                                alt='Landing page for Pet Services web app featuring a map, a dog and a cat, and a link to log in or create an account'
+                                src={`${project1}`}
+                            />
+                        </motion.div>
+                        <motion.div
+                            variants={projectTransition}
+                            className="relative m-4"
+                        >
+                            <div className={overlayStyleLight}>
+                                <p className="text-2xl font-playfair">
+                                    FitnessGram
+                                </p>
+                                <p className="mt-7 py-0.5">
+                                    Node / Express / MySQL / Bootstrap
+                                </p>
                                 <a
-                                    className="hover:opacity-50 selftransition duration-500"
-                                    href="https://github.com/veronika-pomy/FitnessGram"
+                                    href='https://fitnessgram.herokuapp.com/login'
                                     target="_blank" 
-                                    rel="noreferrer"
+                                    rel="noreferrer" 
+                                    className="underline py-0.5"
                                 >
-                                    <AiFillGithub size={24} />
+                                    Deployed App
                                 </a>
+                                <div className="flex justify-center py-0.5">
+                                    <a
+                                        className="hover:opacity-50 selftransition duration-500"
+                                        href="https://github.com/veronika-pomy/FitnessGram"
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <AiFillGithub size={24} />
+                                    </a>
+                                </div>
+                                
                             </div>
-                            
-                        </div>
-                        <img 
-                            alt='Login/Signup page for FitnessGram web app'
-                            src={`${project2}`}
-                        />
-                    </motion.div>
-                    <motion.div
-                        variants={projectTransition}
-                        className="relative m-4"
-                    >
-                        <div className={overlayStyleLight}>
-                            <p className="text-2xl font-playfair">
-                                Sous Chef
-                            </p>
-                            <p className="mt-7 py-0.5">
-                                Javascript / Youtube API / Google Fonts
-                            </p>
-                            <a
-                                href='https://veronika-pomy.github.io/Sous-Chef/'
-                                target="_blank" 
-                                rel="noreferrer" 
-                                className="underline py-0.5"
-                            >
-                                Deployed App
-                            </a>
-                            <div className="flex justify-center py-0.5">
+                            <img 
+                                alt='Login/Signup page for FitnessGram web app'
+                                src={`${project2}`}
+                            />
+                        </motion.div>
+                        <motion.div
+                            variants={projectTransition}
+                            className="relative m-4"
+                        >
+                            <div className={overlayStyleLight}>
+                                <p className="text-2xl font-playfair">
+                                    Sous Chef
+                                </p>
+                                <p className="mt-7 py-0.5">
+                                    Javascript / Youtube API / Google Fonts
+                                </p>
                                 <a
-                                    className="hover:opacity-50 selftransition duration-500"
-                                    href="https://github.com/veronika-pomy/Sous-Chef"
+                                    href='https://veronika-pomy.github.io/Sous-Chef/'
                                     target="_blank" 
-                                    rel="noreferrer"
+                                    rel="noreferrer" 
+                                    className="underline py-0.5"
                                 >
-                                    <AiFillGithub size={24} />
+                                    Deployed App
                                 </a>
+                                <div className="flex justify-center py-0.5">
+                                    <a
+                                        className="hover:opacity-50 selftransition duration-500"
+                                        href="https://github.com/veronika-pomy/Sous-Chef"
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                    >
+                                        <AiFillGithub size={24} />
+                                    </a>
+                                </div>
+                                
                             </div>
-                            
-                        </div>
-                        <img 
-                            alt='Landing page for Sous Chef web app with a search bar to enter a desired dish'
-                            src={`${project3}`}
-                        />
+                            <img 
+                                alt='Landing page for Sous Chef web app with a search bar to enter a desired dish'
+                                src={`${project3}`}
+                            />
+                        </motion.div>
                     </motion.div>
-                </motion.div>
-            </div>      
-        </section>
+                </div>      
+            </section>
+        </>
     )
     }
 

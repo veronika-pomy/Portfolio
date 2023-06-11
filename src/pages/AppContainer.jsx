@@ -36,9 +36,12 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
-            <div className="w-4/6 mx-auto lg:h-full">
-              <About setActivePage={setActivePage} />
-              <div className="w-5/6 mx-auto ">
+            <div className="w-4/6 mx-auto">
+            <div className="w-full mx-auto mb-1">
+            <About setActivePage={setActivePage} />
+              </div>
+              
+              <div className="w-full mx-auto mt-16">
                 <Projects />
               </div>
             </div>
