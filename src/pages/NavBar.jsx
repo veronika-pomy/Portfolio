@@ -19,7 +19,7 @@ const Link = ({ page, activePage, setActivePage }) => {
       <AnchorLink
           className={`
               ${activePage === pageLowerCase ? "blue" : ""}
-              ${darkTheme ? 'hover:text-red ' : 'hover:text-blue ' }
+              ${darkTheme ? 'hover:text-blue ' : 'hover:text-gold '}
               transition
               duration-500
           `}
@@ -35,7 +35,7 @@ const Link = ({ page, activePage, setActivePage }) => {
 const LinkInitials = ({ page }) => {
   return (
       <AnchorLink
-          className={`font-crimson text-4xl font-bold`}
+          className={`font-crimson text-5xl font-bold`}
           href={`#${page}`}
       >
           VP
@@ -51,8 +51,8 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
   const { darkTheme } = useThemeContext();
 
   // changing navbar opacity on scroll
-  const navBackgroundLight = topOfPage ? "bg-light" : "bg-light-opacity-50";
-  const navBackgroundDark = topOfPage ? "bg-dark" : "bg-dark-opacity-50";
+  const navBackgroundLight = topOfPage ? "bg-light" : "bg-light bg-opacity-80";
+  const navBackgroundDark = topOfPage ? "bg-dark" : "bg-dark bg-opacity-80";
 
   return (
     <nav 
@@ -61,14 +61,25 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         (isNavToggled && !isAboveSmallScreen ? 'z-40 w-full fixed top-0 py-6' : `z-40 w-full fixed top-0 py-6`)
         }
     >
-      <div
-        className="flex items-center justify-between mx-auto w-4/6"
-      >
+    
+    {/* INITIALS DESKTOP */}
+    <div className="hidden lg:block absolute top-4 left-20">
         {/* Scroll to the top when user clicks on initials */}
         <LinkInitials 
-                page="about"
+                    page="about"
         />
+    </div>
 
+      <div
+        className="flex items-center justify-between lg:justify-end mx-auto w-4/6"
+      >
+        {/* INITIALS MOBILE */}
+        <div className="lg:hidden">
+            <LinkInitials 
+                        page="about"
+            />
+        </div>
+        
         {/* DESKTOP vs MOBILE */}
 
 
@@ -76,7 +87,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         {isAboveSmallScreen ? 
                 (
                     <div
-                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-xl"
+                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-2xl"
                     >
                         <Link 
                             page="About"
@@ -115,7 +126,12 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         {/* MOBILE */}
         {! isAboveSmallScreen && isNavToggled &&
                 (
-                    <div className="fixed right-0 bottom-0 h-full bg-grey bg-opacity-90 w-full">
+                    <div 
+                        className={`
+                            ${(darkTheme ? 'bg-dark' : 'bg-light')}
+                            fixed right-0 bottom-0 h-full bg-opacity-90 w-full
+                        `}
+                    >
                         {/* ICON FOR CLOSING NAV ON MOBILE */}
                         <div className="flex justify-end p-12">
                             <button
@@ -168,10 +184,17 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
                 )        
             }
 
-            {/* Switch Theme */}
-            <ThemeSwitch />
+            {/* SWITCH THEME ON MOBILE */}
+            <div className="lg:hidden">
+                <ThemeSwitch />
+            </div>
       </div>
-      
+
+      {/* SWITCH THEME ON DESKTOP */}
+        <div className="hidden lg:block absolute top-6 right-20">
+            <ThemeSwitch />
+        </div>      
+
     </nav>
   )
 }

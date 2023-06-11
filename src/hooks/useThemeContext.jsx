@@ -10,7 +10,6 @@ export default function ThemeProvider ({children}) {
 
     //method to update theme state
     const toggleTheme = () => {
-        // console.log(`Dark theme is on: ${darkTheme} `);
         return setDarkTheme((prev) => !prev);
     };
 

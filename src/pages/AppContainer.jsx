@@ -1,4 +1,6 @@
-import NavBar from "./NavBar";
+import NavBar from './NavBar';
+import About from './About';
+
 import { useEffect, useState } from 'react';
 import { useThemeContext } from '../hooks/useThemeContext'
 
@@ -33,6 +35,9 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
+            <div className="w-4/6 mx-auto md:h-full">
+              <About setActivePage={setActivePage} />
+            </div>
           </div>
   )
 }
