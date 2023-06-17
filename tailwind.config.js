@@ -16,7 +16,9 @@ module.exports = {
         crimson: ["Crimson Text","serif"],
         muktaam: ["Mukta Mahee", "sans-serif"]
       },
-
+      fontSize: {
+        sm: '1.2rem',
+      },
     },
     screens: {
       "xs": "480px",

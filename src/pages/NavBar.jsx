@@ -18,7 +18,6 @@ const Link = ({ page, activePage, setActivePage }) => {
     
       <AnchorLink
           className={`
-              ${activePage === pageLowerCase ? "blue" : ""}
               ${darkTheme ? 'hover:text-blue ' : 'hover:text-gold '}
               transition
               duration-500
@@ -63,7 +62,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
     >
     
     {/* INITIALS DESKTOP */}
-    <div className="hidden lg:block absolute top-4 left-20">
+    <div className="hidden lg:block absolute top-5 left-20">
         {/* Scroll to the top when user clicks on initials */}
         <LinkInitials 
                     page="about"
@@ -71,7 +70,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
     </div>
 
       <div
-        className="flex items-center justify-between lg:justify-end mx-auto w-4/6"
+        className="flex flex-col xs:flex-row items-center justify-between lg:justify-end mx-auto w-4/6"
       >
         {/* INITIALS MOBILE */}
         <div className="lg:hidden">
@@ -87,7 +86,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         {isAboveSmallScreen ? 
                 (
                     <div
-                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-2xl"
+                        className="flex justify-between gap-16 md:gap-32 font-muktaam text-2xl m-2 sm:m-2"
                     >
                         <Link 
                             page="About"
@@ -114,7 +113,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
                 : 
                 (
                     <button
-                        className={(isNavToggled ? 'hidden' : '')}
+                        className={'m-2 sm:m-2' + (isNavToggled ? 'hidden' : '')}
                         // this resets nav based on user clicking on nav on mobile
                         onClick = {() => setIsNavToggled(!isNavToggled)}
                     >
@@ -185,13 +184,15 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
             }
 
             {/* SWITCH THEME ON MOBILE */}
-            <div className="lg:hidden">
+            <div className="lg:hidden m-2 sm:m-2">
                 <ThemeSwitch />
             </div>
       </div>
 
       {/* SWITCH THEME ON DESKTOP */}
-        <div className="hidden lg:block absolute top-6 right-20">
+        <div className={`
+            hidden lg:block absolute top-7 right-20
+        `}>
             <ThemeSwitch />
         </div>      
 

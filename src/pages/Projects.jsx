@@ -37,7 +37,7 @@ const Projects = () => {
                 
                 {/* HEADER */}
                 <motion.div
-                    className="md:w-2/4 mx-auto text-center"
+                    className=" mx-auto text-center"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -58,12 +58,12 @@ const Projects = () => {
                     </div>
                 </ motion.div>
                 {/* PROJECTS */}
-                <div className="flex felx-col md:flex-row justify-center">
+                <div className="flex flex-col xl:flex-row justify-center">
                     
                     {/* set grid system for sceens above small to align project screenshots */}
                     
                     <motion.div
-                        className="md:grid md:grid-cols-3"
+                        className="xl:grid xl:grid-cols-3 flex flex-col place-items-center"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
@@ -94,7 +94,7 @@ const Projects = () => {
                             projectIcon={sousChefIcon}
                             iconAlt={'Landing page for Sous Chef web app with a search bar to enter a desired dish'}
                             name={'Sous Chef'}
-                            description={'JavaScript application utilizes YouTube and Calorie Ninja APIs'}
+                            description={'JavaScript application utilizes YouTube and Calorie Ninja APIs.'}
                             deployed={'https://veronika-pomy.github.io/Sous-Chef/'}
                             ghub={'https://github.com/veronika-pomy/Sous-Chef'} 
                         />

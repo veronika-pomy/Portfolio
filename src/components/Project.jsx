@@ -27,45 +27,48 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
     return (
         <motion.div
             variants={projectTransition}
-            className="relative m-4"
+            className="relative m-12 md:w-3/6 lg:w-3/6 xl:w-full 2xl:w-5/6"
         >
             <div className={`${overlayStyle}` + (darkTheme ? ` bg-blue text-dark` : ` bg-gold text-light`)}>
-                <p className="text-2xl font-playfair">
-                    {name}
+                <p className="text-2xl xl:text-sm font-crimson">
+                    <a
+                        href={deployed}
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="underline"
+                    >
+                        {name}
+                    </a>  
                 </p>
                 {
 
                 }
-                <p className="mt-4 mb-4 py-0.5">
+                <p className="mt-3 mb-3 py-0.5 font-muktaam hidden xs:block">
                     {description}
                 </p>
-                <div className="flex">
+                <div className="flex items-center ">
                     <a
-                        className="hover:opacity-50 selftransition duration-500 mr-3"
+                        className="hover:opacity-50 selftransition duration-500"
                         href={ghub}
                         target="_blank" 
                         rel="noreferrer"
                     >
                         <AiFillGithub size={28} />
                     </a>
-                    <a
-                        href={deployed}
-                        target="_blank" 
-                        rel="noreferrer" 
-                        className="underline py-0.5"
-                    >
-                        Deployed App
-                    </a>
                 </div>
             </div>
-            <img 
-                alt={iconAlt}
-                src={`${projectIcon}`}
-                className={darkTheme ? 
-                    "invert-[.99] sepia-[.05] saturate-[.08] hue-rotate-[313deg] brightness-[1.18] contrast-[.88]" 
-                : 
-                    "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81]"}
-            />
+            <div
+                className="flex justify-center"
+            >
+                <img 
+                    alt={iconAlt}
+                    src={`${projectIcon}`}
+                    className={darkTheme ? 
+                        "invert-[.64] sepia-[.15] saturate-[1.95] hue-rotate-[154deg] brightness-[.88] contrast-[.85]" 
+                    : 
+                        "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81]"}
+                />
+            </div>
         </motion.div>
     );
 };

@@ -15,7 +15,7 @@ const About = ({ setActivePage }) => {
         <section id='about' className="lg:flex md:justify-between md:items-center lg:h-full gap-16 py-10">    
             {/* IMAGE */}
             {/* order two allow it to be on the right of text when screen is large but on top when screen is small */}
-            <div className="md:order-2 flex justify-center lg:justify-end basis-4/6 z-10 mt-16 mb-10 md:mt-32 md:mb-24">
+            <div className="md:order-2 flex justify-center lg:justify-end basis-4/6 z-10 mt-40 xs:mt-16 mb-10 md:mt-32 md:mb-24">
                         <div>
                             <img
                                 alt="Veronika's Developer Profile"
@@ -48,10 +48,10 @@ const About = ({ setActivePage }) => {
                         visible:{ opacity: 1, x: 0 }
                     }}
                 >
-                    <p className="text-4xl sm:text-7xl font-crimson z-10 text-center lg:text-start">
+                    <p className="text-5xl sm:text-7xl font-crimson z-10 text-center lg:text-start">
                         Veronika {" "}
                         <span
-                            className={(darkTheme ? 'xs:relative xs:text-blue' : 'xs:relative xs:text-gold')}
+                            className={(darkTheme ? 'xs:relative text-blue' : 'xs:relative text-gold')}
                         >
                             Pomyateeva
                         </span>
@@ -121,7 +121,7 @@ const About = ({ setActivePage }) => {
 
              {/* SOCIAL ICONS ABOVE MEDIUM SCREENS */}
              <motion.div
-                    className='hidden lg:block absolute bottom-0 right-24 z-40'
+                    className='hidden lg:block absolute bottom-0 right-20 z-10'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
