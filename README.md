@@ -56,6 +56,9 @@ If you have any questions regarding this project, please don't hesitate to conta
 ### React Icons
 
 - https://react-icons.github.io/react-icons/icons?name=ai
-- 
+
+### Style
+
+- https://tailwind-color-filter-generator.vercel.app/
 
 <p align="right">(<a href="#veronika-pomyateeva-portfolio">back to top</a>)</p>

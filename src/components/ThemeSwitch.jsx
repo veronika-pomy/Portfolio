@@ -6,7 +6,7 @@ const ThemeSwitch = () => {
   const { darkTheme, toggleTheme } = useThemeContext();
 
   return (
-      <button id='button' onClick={toggleTheme} type='button'>
+      <button id='button' onClick={toggleTheme} type='button' className='w-12 h-7'>
           <div
             className={`flex w-12 h-7 rounded-full` + (darkTheme ? ` bg-light` : ` bg-dark`)}
           >
