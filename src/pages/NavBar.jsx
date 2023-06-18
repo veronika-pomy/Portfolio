@@ -8,7 +8,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { useThemeContext } from '../hooks/useThemeContext';
 
 // Link for menu items
-const Link = ({ page, activePage, setActivePage }) => {
+const Link = ({ page, setActivePage }) => {
 
     const pageLowerCase = page.toLowerCase();
     const { darkTheme } = useThemeContext();
@@ -80,7 +80,6 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
         </div>
         
         {/* DESKTOP vs MOBILE */}
-
 
         {/* DESKTOP */}  
         {isAboveSmallScreen ? 
