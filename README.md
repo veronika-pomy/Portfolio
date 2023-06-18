@@ -38,6 +38,7 @@ If you have any questions regarding this project, please don't hesitate to conta
 
 ### Libraries
 
+- https://www.emailjs.com/
 - https://www.framer.com/motion/
 - https://www.npmjs.com/package/gh-pages
 - https://www.npmjs.com/package/react-anchor-link-smooth-scroll

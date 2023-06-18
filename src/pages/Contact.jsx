@@ -1,6 +1,7 @@
 import Icons from '../components/Icons';
+import PopUp from '../components/PopUp';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
@@ -10,19 +11,31 @@ const Contact = () => {
 
     const { darkTheme } = useThemeContext();
 
+    const [ popUp, setPopUp ] = useState(true);
+
     // identify inputs, validate inputs, give errors if any
     const { register, trigger, formState: { errors } } = useForm();
-    
-    // when form is submitted, check if the form is valid before proceeding
-    const onSubmit = async ( e ) => {
+
+    const form = useRef();
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
         const isValid = await trigger();
         if (!isValid) {
             e.preventDefault();
-        }
+        } else {
+            emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUB_KEY)
+            .then((result) => {
+                console.log(result.text); 
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
     };
     
       return (
-        <section id="contact" className="py-48 md:flex md:flex-col md:items-center">
+        <section id="contact" className="py-44 md:flex md:flex-col md:items-center">
+        <PopUp popUp={popUp} setPopUp={setPopUp} />
             {/* HEADER */}
             <motion.div
                 className="w-full mx-auto text-center md:text-start"
@@ -54,17 +67,14 @@ const Contact = () => {
                 }}
             >   
                 <form
-                    target="_blank"
-                    onSubmit={onSubmit}
-                    className=''
-                    // from https://formsubmit.co/
-                    action="https://formsubmit.co/pomyateevav@gmail.com"
-                    method="POST"
+                    ref={form}
+                    onSubmit={sendEmail}
                 >
                     <input 
                         className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 font-muktaam text-lg rounded"
                         type="text"
                         placeholder="Name"
+                        name="user_name"
                         // setting how to register input and valdiate it using react hook form
                         {...register("name",
                             {
@@ -84,6 +94,7 @@ const Contact = () => {
                     <input 
                         className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 mt-5 font-muktaam text-lg rounded"
                         type="text"
+                        name="user_email"
                         placeholder="Email"
                         {...register("email",
                             {
@@ -105,6 +116,7 @@ const Contact = () => {
                      <textarea
                         className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 mt-5 font-muktaam text-lg rounded"
                         type="text"
+                        name="message"
                         placeholder="Message"
                         rows="10"
                         cols="50"
@@ -130,6 +142,7 @@ const Contact = () => {
                         <div>
                             <button
                                 type="submit"
+                                value='Send'
                                 className={`
                                     ${(darkTheme ? 
                                     'bg-blue border-light text-dark hover:text-light'
