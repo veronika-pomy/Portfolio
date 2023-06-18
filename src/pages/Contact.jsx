@@ -2,7 +2,7 @@ import Icons from '../components/Icons';
 import PopUp from '../components/PopUp';
 
 import { useRef, useState } from 'react';
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -24,9 +24,10 @@ const Contact = () => {
         if (!isValid) {
             e.preventDefault();
         } else {
-            emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUB_KEY)
+            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUB_KEY)
             .then((result) => {
                 console.log(result.text); 
+                setPopUp(true);
             }, (error) => {
                 console.log(error.text);
             });
@@ -35,7 +36,8 @@ const Contact = () => {
     
       return (
         <section id="contact" className="py-44 md:flex md:flex-col md:items-center">
-        <PopUp popUp={popUp} setPopUp={setPopUp} />
+            <PopUp popUp={popUp} setPopUp={setPopUp} />
+        
             {/* HEADER */}
             <motion.div
                 className="w-full mx-auto text-center md:text-start"
