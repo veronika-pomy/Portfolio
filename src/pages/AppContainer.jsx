@@ -1,6 +1,8 @@
 import NavBar from './NavBar';
 import About from './About';
 import Projects from './Projects';
+import Resume from './Resume';
+import Contact from './Contact';
 
 import { useEffect, useState } from 'react';
 import { useThemeContext } from '../hooks/useThemeContext'
@@ -14,7 +16,6 @@ const AppContainer = () => {
 
   // theme context
   const { darkTheme } = useThemeContext();
-
 
   // handle scrolling page down, navbar appearance
   useEffect(() => {
@@ -40,9 +41,14 @@ const AppContainer = () => {
             <div className="w-full mx-auto mb-1">
             <About setActivePage={setActivePage} />
               </div>
-              
               <div className="w-full mx-auto mt-16">
                 <Projects />
+              </div>
+              <div className="w-full mx-auto md:h-full">
+                <Resume />
+              </div>
+              <div className="w-5/6 mx-auto md:h-full">
+                <Contact />
               </div>
             </div>
           </div>

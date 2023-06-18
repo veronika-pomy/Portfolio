@@ -19,6 +19,9 @@ module.exports = {
       fontSize: {
         sm: '1.2rem',
       },
+      scale: {
+        '-100': '-1',
+      },
     },
     screens: {
       "xs": "480px",

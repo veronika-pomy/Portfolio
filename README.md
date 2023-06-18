@@ -56,6 +56,8 @@ If you have any questions regarding this project, please don't hesitate to conta
 ### React Icons
 
 - https://react-icons.github.io/react-icons/icons?name=ai
+- https://react-icons.github.io/react-icons/icons?name=gr
+- https://react-icons.github.io/react-icons/icons?name=si
 
 ### Style
 

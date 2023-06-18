@@ -2,8 +2,8 @@ import Project from '../components/Project';
 import petServicesIcon from '../assets/projects/pet-services-icon.png';
 import fitnessGramIcon from '../assets/projects/fitnessgram-icon.png';
 import sousChefIcon from '../assets/projects/sous-chef-icon.png';
-import accentLight from '../assets/color-accents/accent-projects-light.png';
-import accentDark from '../assets/color-accents/accent-projects-dark.png';
+import accentLightProjects from '../assets/color-accents/accent-projects-light.png';
+import accentDarkProjects from '../assets/color-accents/accent-projects-dark.png';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -24,17 +24,16 @@ const Projects = () => {
 
     return (
         <>
-            <div>
+            {/* <div>
                 <img
                     alt="Color accent for the Projects page"
                     className="
-                                 absolute left-0 
+                                 absolute left-0 transform hidden lg:block
                             "
-                    src={`${(darkTheme ? accentDark : accentLight)}`}
+                    src={`${(darkTheme ? accentDarkProjects : accentLightProjects)}`}
                 />
-            </div>
-            <section id="projects" className="pt-48 pb-48">
-                
+            </div> */}
+            <section id="projects" className="pt-48 pb-36">
                 {/* HEADER */}
                 <motion.div
                     className=" mx-auto text-center"
@@ -49,7 +48,7 @@ const Projects = () => {
                 >
                     <div>
                         <p className="font-crimson font-semibold text-5xl mb-32">
-                            MY <span 
+                            <span 
                                 className={darkTheme ? 'text-blue' : 'text-gold'}
                             >
                                 PROJECTS

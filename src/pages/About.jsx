@@ -1,7 +1,7 @@
 import Icons from '../components/Icons';
 import profileImage from '../assets/profile-photo.jpg';
-import accentLight from '../assets/color-accents/accent-about-light.png';
-import accentDark from '../assets/color-accents/accent-about-dark.png';
+import accentLightAbout from '../assets/color-accents/accent-about-light.png';
+import accentDarkAbout from '../assets/color-accents/accent-about-dark.png';
 
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -12,7 +12,7 @@ const About = ({ setActivePage }) => {
     const { darkTheme } = useThemeContext();
 
     return (
-        <section id='about' className="lg:flex md:justify-between md:items-center lg:h-full gap-16 py-10">    
+        <section id='about' className="lg:flex md:justify-between md:items-center lg:h-full gap-16 py-5">    
             {/* IMAGE */}
             {/* order two allow it to be on the right of text when screen is large but on top when screen is small */}
             <div className="md:order-2 flex justify-center lg:justify-end basis-4/6 z-10 mt-40 xs:mt-16 mb-10 md:mt-32 md:mb-24">
@@ -121,7 +121,7 @@ const About = ({ setActivePage }) => {
 
              {/* SOCIAL ICONS ABOVE MEDIUM SCREENS */}
              <motion.div
-                    className='hidden lg:block absolute bottom-0 right-20 z-10'
+                    className='hidden lg:block absolute bottom-0 right-20 z-10 my-14'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -133,15 +133,15 @@ const About = ({ setActivePage }) => {
                 >
                     <Icons />
             </motion.div>
-            <div>
+            {/* <div>
                 <img
                     alt="Color accent for the About page"
                     className="
                                 hidden lg:block absolute bottom-0 left-0
                             "
-                    src={`${(darkTheme ? accentDark : accentLight)}`}
+                    src={`${(darkTheme ? accentDarkAbout : accentLightAbout)}`}
                 />
-            </div>
+            </div> */}
         </section>
     );
 };
