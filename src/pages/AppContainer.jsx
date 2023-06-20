@@ -3,9 +3,10 @@ import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
+import PopUp from '../components/PopUp';
 
 import { useEffect, useState } from 'react';
-import { useThemeContext } from '../hooks/useThemeContext'
+import { useThemeContext } from '../hooks/useThemeContext';
 
 const AppContainer = () => {
       // use state default 'about'
@@ -37,9 +38,10 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
+            <PopUp />
             <div className="w-4/6 mx-auto">
-            <div className="w-full mx-auto mb-1">
-            <About setActivePage={setActivePage} />
+              <div className="w-full mx-auto mb-1">
+                <About setActivePage={setActivePage} />
               </div>
               <div className="w-full mx-auto mt-16">
                 <Projects />

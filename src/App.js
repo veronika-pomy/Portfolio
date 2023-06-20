@@ -1,13 +1,15 @@
 import AppContainer from './pages/AppContainer';
 // import theme provider to make global state availabile to child compponents
 import ThemeContext from './hooks/useThemeContext';
+import PopUpContext from './hooks/usePopUpContext';
 
 function App() {
   return (
     <ThemeContext>
-      <AppContainer />
+      <PopUpContext>
+        <AppContainer />
+      </PopUpContext>
     </ThemeContext>
-    
   );
 }
 

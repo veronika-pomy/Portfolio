@@ -1,17 +1,18 @@
 import Icons from '../components/Icons';
-import PopUp from '../components/PopUp';
 
-import { useRef, useState } from 'react';
-import { set, useForm } from "react-hook-form";
+import { useRef } from 'react';
+import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
+import { usePopUpContext } from '../hooks/usePopUpContext';
 
-const Contact = () => {
+const Contact = ( ) => {
 
     const { darkTheme } = useThemeContext();
 
-    const [ popUp, setPopUp ] = useState(true);
+    // popup method
+    const { triggerPopUp } = usePopUpContext();
 
     // identify inputs, validate inputs, give errors if any
     const { register, trigger, formState: { errors } } = useForm();
@@ -27,7 +28,7 @@ const Contact = () => {
             emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUB_KEY)
             .then((result) => {
                 console.log(result.text); 
-                setPopUp(true);
+                triggerPopUp();
             }, (error) => {
                 console.log(error.text);
             });
@@ -35,9 +36,7 @@ const Contact = () => {
     };
     
       return (
-        <section id="contact" className="py-44 md:flex md:flex-col md:items-center">
-            <PopUp popUp={popUp} setPopUp={setPopUp} />
-        
+        <section id="contact" className="py-44 md:flex md:flex-col md:items-center relative">
             {/* HEADER */}
             <motion.div
                 className="w-full mx-auto text-center md:text-start"
@@ -73,7 +72,10 @@ const Contact = () => {
                     onSubmit={sendEmail}
                 >
                     <input 
-                        className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 font-muktaam text-lg rounded"
+                        className={`
+                            ${darkTheme ? 'bg-dark border-light placeholder-light text-light ' : ' border-dark bg-light placeholder-dark text-dark '}
+                            w-full border-2 p-3 mb-2 font-muktaam text-lg rounded
+                        `}
                         type="text"
                         placeholder="Name"
                         name="user_name"
@@ -94,7 +96,10 @@ const Contact = () => {
                     )
                     }
                     <input 
-                        className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 mt-5 font-muktaam text-lg rounded"
+                        className={`
+                            ${darkTheme ? 'bg-dark border-light placeholder-light text-light ' : ' border-dark bg-light placeholder-dark text-dark '}
+                            w-full border-2 p-3 mt-2 font-muktaam text-lg rounded
+                        `}
                         type="text"
                         name="user_email"
                         placeholder="Email"
@@ -116,7 +121,10 @@ const Contact = () => {
                     )
                     }
                      <textarea
-                        className="w-full border-2 border-dark bg-light placeholder-dark text-dark p-3 mt-5 font-muktaam text-lg rounded"
+                        className={`
+                            ${darkTheme ? 'bg-dark border-light placeholder-light text-light ' : ' border-dark bg-light placeholder-dark text-dark '}
+                            w-full border-2 p-3 mt-4 font-muktaam text-lg rounded
+                        `}
                         type="text"
                         name="message"
                         placeholder="Message"

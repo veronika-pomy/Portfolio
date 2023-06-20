@@ -2,10 +2,13 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
+import { usePopUpContext } from '../hooks/usePopUpContext';
 
-const PopUp = ({popUp, setPopUp}) => {
+const PopUp = ( ) => {
 
     const { darkTheme } = useThemeContext();
+
+    const { popUp, triggerPopUp } = usePopUpContext();
 
     return (popUp) ? (
         <div className={`
@@ -16,20 +19,25 @@ const PopUp = ({popUp, setPopUp}) => {
             )}
                 transparent
                 border
-                p-2
+                p-1
                 rounded-[18px]
                 flex
                 flex-row-reverse
                 font-muktaam
-                
+                backdrop-blur-md
+                backdrop-brightness-150
                 drop-shadow
+                fixed
+                top-28
+                right-4
+                z-40
         `}>
             <div
                 className='pb-4 pr-1 '
             >  
                 <button
                         className='self-end'
-                        onClick={() => setPopUp(false)}
+                        onClick={() => triggerPopUp()}
                 >
                         <AiOutlineClose className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={14} />
                 </button>
