@@ -37,7 +37,7 @@ const About = ({ setActivePage }) => {
             
             <div className="lg:justify-end basis-4/6 z-10 mt-16 mb-10 md:mt-32 md:mb-24 md:h-84">
                 {/* ABOUT */}
-                {/* use motion for simple animation of text  */}
+                {/* use motion for simple animation */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"

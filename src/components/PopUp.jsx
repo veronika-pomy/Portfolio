@@ -11,45 +11,50 @@ const PopUp = ( ) => {
     const { popUp, triggerPopUp } = usePopUpContext();
 
     return (popUp) ? (
-        <div className={`
-            ${(darkTheme ?
-                    'border-light shadow-light shadow-sm'
-                    :
-                    'border-dark shadow-dark shadow-sm'
-            )}
-                transparent
-                border
-                p-1
-                rounded-[18px]
-                flex
-                flex-row-reverse
-                font-muktaam
-                backdrop-blur-md
-                backdrop-brightness-150
-                drop-shadow
-                fixed
-                top-28
-                right-4
-                z-40
-        `}>
-            <div
-                className='pb-4 pr-1 '
-            >  
-                <button
-                        className='self-end'
-                        onClick={() => triggerPopUp()}
+        <motion.div
+            // initial={{ y: "50%" }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className={`
+                ${(darkTheme ?
+                        'border-light shadow-light shadow-sm backdrop-brightness-300'
+                        :
+                        'border-dark shadow-dark shadow-sm backdrop-brightness-700'
+                )}
+                    transparent
+                    border
+                    p-1
+                    rounded-[4px]
+                    flex
+                    flex-row-reverse
+                    font-muktaam
+                    backdrop-blur-md
+                    drop-shadow
+                    fixed
+                    top-28
+                    right-4
+                    z-40
+            `}>
+                <div
+                    className='pb-4 pr-1 '
+                >  
+                    <button
+                            className='self-end'
+                            onClick={() => triggerPopUp()}
+                    >
+                            <AiOutlineClose className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={14} />
+                    </button>
+                </div>
+                <div
+                    className='pb-3 pt-4 pl-4'
                 >
-                        <AiOutlineClose className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={14} />
-                </button>
+                    <p>
+                        Thank you for your message! I'll be in touch shortly.
+                    </p>
+                </div>
             </div>
-            <div
-                className='pb-3 pt-4 pl-4'
-            >
-                <p>
-                    Thank you for your message! I'll be in touch shortly.
-                </p>
-            </div>
-        </div>
+        </motion.div>
     ) 
     :
     ''

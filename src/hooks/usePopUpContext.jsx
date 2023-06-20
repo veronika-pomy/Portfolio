@@ -6,7 +6,7 @@ export const usePopUpContext = () => useContext(PopUpContext);
 
 export default function PopUpProvider ({children}) {
     
-    const [ popUp, setPopUp ] = useState(true);
+    const [ popUp, setPopUp ] = useState(false);
 
     //method to update theme state
     const triggerPopUp = () => {
