@@ -1,6 +1,6 @@
 import Icons from '../components/Icons';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ const Contact = ( ) => {
     const { triggerPopUp } = usePopUpContext();
 
     // identify inputs, validate inputs, give errors if any
-    const { register, trigger, formState: { errors } } = useForm();
+    const { register, trigger, reset, formState: { errors } } = useForm();
 
     const form = useRef();
 
@@ -29,6 +29,7 @@ const Contact = ( ) => {
             .then((result) => {
                 console.log(result.text); 
                 triggerPopUp();
+                reset();
             }, (error) => {
                 console.log(error.text);
             });
@@ -71,7 +72,7 @@ const Contact = ( ) => {
                     ref={form}
                     onSubmit={sendEmail}
                 >
-                    <input 
+                    <input
                         className={`
                             ${darkTheme ? 'bg-dark border-light placeholder-light text-light ' : ' border-dark bg-light placeholder-dark text-dark '}
                             w-full border-2 p-3 mb-2 font-muktaam text-lg rounded
@@ -95,7 +96,7 @@ const Contact = ( ) => {
                         </p>
                     )
                     }
-                    <input 
+                    <input
                         className={`
                             ${darkTheme ? 'bg-dark border-light placeholder-light text-light ' : ' border-dark bg-light placeholder-dark text-dark '}
                             w-full border-2 p-3 mt-2 font-muktaam text-lg rounded

@@ -4,7 +4,7 @@ export const PopUpContext = React.createContext();
 
 export const usePopUpContext = () => useContext(PopUpContext);
 
-export default function PopUpProvider ({children}) {
+export default function PopUpProvider ({ children }) {
     
     const [ popUp, setPopUp ] = useState(false);
 
