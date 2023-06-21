@@ -2,6 +2,8 @@
 
 ## Description
 
+I built my developer portfolio using React and Node. Please refer to the list below for the full description of libraries and resources used for this project. 
+
 ## Table of Contents
 
   <ul>
@@ -21,8 +23,9 @@
 
 ## Demo
 
-- Screenshot
-- Link
+![image]()
+
+- Check out my portfolio [here.]()
 
 ## Questions
 
@@ -32,36 +35,36 @@ If you have any questions regarding this project, please don't hesitate to conta
 
 ### Technologies & Frameworks
 
-- Node - https://nodejs.org/en
-- React - https://react.dev/
-- Tailwind - https://tailwindcss.com/
+- [Node](https://nodejs.org/en)
+- [React](https://react.dev/)
+- [Tailwind](https://tailwindcss.com/)
 
 ### Libraries
 
-- https://www.emailjs.com/
-- https://www.framer.com/motion/
-- https://www.npmjs.com/package/gh-pages
-- https://www.npmjs.com/package/react-anchor-link-smooth-scroll
-- https://www.npmjs.com/package/react-hook-form
+- [Emailjs](https://www.emailjs.com/)
+- [Framer](https://www.framer.com/motion/)
+- [Gh-pages](https://www.npmjs.com/package/gh-pages)
+- [React Anchor Link](https://www.npmjs.com/package/react-anchor-link-smooth-scroll)
+- [React Hook Form](https://www.npmjs.com/package/react-hook-form)
 
-### Project Icons
+### Project Icons from Flaticon
 
-- https://www.flaticon.com/authors/eideticmemo
-- https://www.flaticon.com/authors/freepik
+- [Author: Eideticmemo](https://www.flaticon.com/authors/eideticmemo)
+- [Auther: Freepik](https://www.flaticon.com/authors/freepik)
 
 ### Google Fonts
 
-- https://fonts.google.com/specimen/Crimson+Text
-- https://fonts.google.com/specimen/Mukta+Mahee
+- [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
+- [Mukta Mahee](https://fonts.google.com/specimen/Mukta+Mahee)
 
 ### React Icons
 
-- https://react-icons.github.io/react-icons/icons?name=ai
-- https://react-icons.github.io/react-icons/icons?name=gr
-- https://react-icons.github.io/react-icons/icons?name=si
+- [Ant Design Icons](https://react-icons.github.io/react-icons/icons?name=ai)
+- [Grommet-Icons](https://react-icons.github.io/react-icons/icons?name=gr)
+- [Simple Icons](https://react-icons.github.io/react-icons/icons?name=si)
 
 ### Style
 
-- https://tailwind-color-filter-generator.vercel.app/
+- [Tailwind Color Filter](https://tailwind-color-filter-generator.vercel.app/)
 
 <p align="right">(<a href="#veronika-pomyateeva-portfolio">back to top</a>)</p>
