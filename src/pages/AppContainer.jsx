@@ -9,7 +9,8 @@ import { useEffect, useState } from 'react';
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const AppContainer = () => {
-      // use state default 'about'
+    
+  // use state default 'about'
   const [ activePage, setActivePage ] = useState('about');
 
   // changes navbar attrs when scrolling 

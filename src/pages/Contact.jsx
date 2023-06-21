@@ -1,6 +1,6 @@
 import Icons from '../components/Icons';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";

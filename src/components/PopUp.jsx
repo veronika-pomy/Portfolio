@@ -3,11 +3,24 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { useThemeContext } from '../hooks/useThemeContext';
 import { usePopUpContext } from '../hooks/usePopUpContext';
 
+import React, { useEffect } from 'react';
+
 const PopUp = ( ) => {
 
     const { darkTheme } = useThemeContext();
 
-    const { popUp, triggerPopUp } = usePopUpContext();
+    const { popUp, hidePopUp } = usePopUpContext();
+
+    // const effectTriggeredRef = React.useRef(false);
+
+    useEffect(() => {
+        // when popup is mounted, it is displayed for 5 seconds unless user closes it
+        if (popUp) {
+            setTimeout(() => {
+                hidePopUp();
+            }, 5000);
+        };
+      }, [popUp, hidePopUp]); 
 
     return (popUp) ? (
         <div className={`
@@ -16,10 +29,7 @@ const PopUp = ( ) => {
                     :
                     ' shadow-dark shadow backdrop-brightness-700'
             )}
-                transparent
-        
                 p-1
-                rounded-[4px]
                 flex
                 flex-row-reverse
                 font-muktaam
@@ -35,7 +45,7 @@ const PopUp = ( ) => {
             >  
                 <button
                         className='self-end'
-                        onClick={() => triggerPopUp()}
+                        onClick={() => hidePopUp()}
                 >
                         <AiOutlineClose className={`${(darkTheme ? 'hover:text-blue' : 'hover:text-gold')}`} size={14} />
                 </button>

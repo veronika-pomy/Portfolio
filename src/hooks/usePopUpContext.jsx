@@ -10,11 +10,15 @@ export default function PopUpProvider ({ children }) {
 
     //method to update theme state
     const triggerPopUp = () => {
-        return setPopUp((prev) => !prev);
+        return setPopUp(true);
+    };
+
+    const hidePopUp = () => {
+        return setPopUp(false);
     };
 
     return (
-        <PopUpContext.Provider value={{ popUp, triggerPopUp }}>
+        <PopUpContext.Provider value={{ popUp, triggerPopUp, hidePopUp }}>
             {children}
         </PopUpContext.Provider>
     );
