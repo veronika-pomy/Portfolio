@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/veronika-pomy/Portfolio/static/css/main.bedad243.css",
+    "main.js": "/veronika-pomy/Portfolio/static/js/main.4a0b6760.js",
+    "static/media/profile-photo.jpg": "/veronika-pomy/Portfolio/static/media/profile-photo.2d0720551cc48f626bcb.jpg",
+    "static/media/accent-projects-dark.png": "/veronika-pomy/Portfolio/static/media/accent-projects-dark.314c2a813fa0415626ea.png",
+    "static/media/accent-projects-light.png": "/veronika-pomy/Portfolio/static/media/accent-projects-light.413170de06bd3d961cfc.png",
+    "static/media/accent-about-dark.png": "/veronika-pomy/Portfolio/static/media/accent-about-dark.d9b5717aca403d0a1682.png",
+    "static/media/accent-about-light.png": "/veronika-pomy/Portfolio/static/media/accent-about-light.3f0b5c90982d167298c0.png",
+    "static/media/accent-resume-dark.png": "/veronika-pomy/Portfolio/static/media/accent-resume-dark.0230f39bd3d551a2b6d4.png",
+    "static/media/accent-resume-light.png": "/veronika-pomy/Portfolio/static/media/accent-resume-light.a660ddd11fe6342f446d.png",
+    "static/media/veronika-pomyateeva-resume-2023.pdf": "/veronika-pomy/Portfolio/static/media/veronika-pomyateeva-resume-2023.cb375ee96a7f158b3ef9.pdf",
+    "static/media/pet-services-icon.png": "/veronika-pomy/Portfolio/static/media/pet-services-icon.2ed23a7b8474b2e9096a.png",
+    "static/media/sous-chef-icon.png": "/veronika-pomy/Portfolio/static/media/sous-chef-icon.f80643c387315e3dc765.png",
+    "static/media/fitnessgram-icon.png": "/veronika-pomy/Portfolio/static/media/fitnessgram-icon.dc815c46a616b390299c.png",
+    "index.html": "/veronika-pomy/Portfolio/index.html",
+    "main.bedad243.css.map": "/veronika-pomy/Portfolio/static/css/main.bedad243.css.map",
+    "main.4a0b6760.js.map": "/veronika-pomy/Portfolio/static/js/main.4a0b6760.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bedad243.css",
+    "static/js/main.4a0b6760.js"
+  ]
+}
