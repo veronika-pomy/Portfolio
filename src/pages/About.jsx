@@ -100,9 +100,9 @@ const About = ({ setActivePage }) => {
                     </a>
                 </motion.div>
 
-                {/* SOCIAL ICONS DESKTOP */}
+                {/* SOCIAL ICONS MOBILE */}
                  <motion.div
-                    className='lg:hidden'
+                    className='lg:hidden mt-5 '
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
