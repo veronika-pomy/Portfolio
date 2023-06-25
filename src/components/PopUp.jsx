@@ -14,11 +14,11 @@ const PopUp = ( ) => {
     // const effectTriggeredRef = React.useRef(false);
 
     useEffect(() => {
-        // when popup is mounted, it is displayed for 5 seconds unless user closes it
+        // when popup is mounted, it is displayed for few seconds unless user closes it
         if (popUp) {
             setTimeout(() => {
                 hidePopUp();
-            }, 5000);
+            }, 15000);
         };
       }, [popUp, hidePopUp]); 
 
