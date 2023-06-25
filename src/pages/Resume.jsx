@@ -66,8 +66,8 @@ const Resume = () => {
                 <ul
                     className="
                         grid
-                        grid-cols-1
-                        xs:grid-cols-2
+            ]
+                        grid-cols-2
                         md:grid-cols-7
                         gap-8
                         w-full 
