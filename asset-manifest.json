@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.bedad243.css",
-    "main.js": "/Portfolio/static/js/main.2c6e5917.js",
+    "main.css": "/Portfolio/static/css/main.a2551345.css",
+    "main.js": "/Portfolio/static/js/main.1f1bd772.js",
     "static/media/profile-photo.jpg": "/Portfolio/static/media/profile-photo.2d0720551cc48f626bcb.jpg",
-    "static/media/accent-projects-dark.png": "/Portfolio/static/media/accent-projects-dark.314c2a813fa0415626ea.png",
-    "static/media/accent-projects-light.png": "/Portfolio/static/media/accent-projects-light.413170de06bd3d961cfc.png",
-    "static/media/accent-about-dark.png": "/Portfolio/static/media/accent-about-dark.d9b5717aca403d0a1682.png",
-    "static/media/accent-about-light.png": "/Portfolio/static/media/accent-about-light.3f0b5c90982d167298c0.png",
-    "static/media/accent-resume-dark.png": "/Portfolio/static/media/accent-resume-dark.0230f39bd3d551a2b6d4.png",
-    "static/media/accent-resume-light.png": "/Portfolio/static/media/accent-resume-light.a660ddd11fe6342f446d.png",
     "static/media/veronika-pomyateeva-resume-2023.pdf": "/Portfolio/static/media/veronika-pomyateeva-resume-2023.cb375ee96a7f158b3ef9.pdf",
-    "static/media/pet-services-icon.png": "/Portfolio/static/media/pet-services-icon.2ed23a7b8474b2e9096a.png",
     "static/media/sous-chef-icon.png": "/Portfolio/static/media/sous-chef-icon.f80643c387315e3dc765.png",
+    "static/media/pet-services-icon.png": "/Portfolio/static/media/pet-services-icon.8e4f3e8c2b5f027548bc.png",
     "static/media/fitnessgram-icon.png": "/Portfolio/static/media/fitnessgram-icon.dc815c46a616b390299c.png",
     "index.html": "/Portfolio/index.html",
-    "main.bedad243.css.map": "/Portfolio/static/css/main.bedad243.css.map",
-    "main.2c6e5917.js.map": "/Portfolio/static/js/main.2c6e5917.js.map"
+    "main.a2551345.css.map": "/Portfolio/static/css/main.a2551345.css.map",
+    "main.1f1bd772.js.map": "/Portfolio/static/js/main.1f1bd772.js.map"
   },
   "entrypoints": [
-    "static/css/main.bedad243.css",
-    "static/js/main.2c6e5917.js"
+    "static/css/main.a2551345.css",
+    "static/js/main.1f1bd772.js"
   ]
 }
