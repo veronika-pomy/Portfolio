@@ -1,6 +1,4 @@
 import resume from "../assets/veronika-pomyateeva-resume-2023.pdf";
-import accentLightResume from '../assets/color-accents/accent-resume-light.png';
-import accentDarkResume from '../assets/color-accents/accent-resume-dark.png';
 
 import { AiOutlineHtml5 } from "react-icons/ai";
 
@@ -31,16 +29,6 @@ const Resume = () => {
 
     return (
     <>
-        {/* <div className="relative w-full z-10">
-                <img
-                    alt="Color accent for the Resume page"
-                    className="
-                                hidden lg:block absolute inset-0 
-                            "
-                    src={`${(darkTheme ? accentDarkResume : accentLightResume)}`}
-                />
-        </div> */}
-
         <section id="resume" className="pt-36 pb-24">
             <div className="md:flex md:flex-col md:justify-between items-center md:gap-4">
             {/* HEADER */}

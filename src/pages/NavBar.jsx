@@ -70,7 +70,7 @@ const NavBar = ({ topOfPage, activePage, setActivePage }) => {
     </div>
 
       <div
-        className="flex flex-col xs:flex-row items-center justify-between lg:justify-end mx-auto w-4/6"
+        className="flex items-center justify-between lg:justify-end mx-auto w-4/6"
       >
         {/* INITIALS MOBILE */}
         <div className="lg:hidden">

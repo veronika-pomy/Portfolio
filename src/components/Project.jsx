@@ -64,9 +64,9 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
                     alt={iconAlt}
                     src={`${projectIcon}`}
                     className={darkTheme ? 
-                        "invert-[.64] sepia-[.15] saturate-[1.95] hue-rotate-[154deg] brightness-[.88] contrast-[.85] p-6" 
+                        "invert-[.99] sepia-[.02] saturate-[.05] hue-rotate-[202deg] brightness-[1.06] contrast-[.88] p-4 md:p-6" 
                     : 
-                        "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81] p-6"}
+                        "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81] p-4 md:p-6"}
                 />
             </div>
         </motion.div>

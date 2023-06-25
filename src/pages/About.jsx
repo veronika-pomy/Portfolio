@@ -1,7 +1,5 @@
 import Icons from '../components/Icons';
 import profileImage from '../assets/profile-photo.jpg';
-import accentLightAbout from '../assets/color-accents/accent-about-light.png';
-import accentDarkAbout from '../assets/color-accents/accent-about-dark.png';
 
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -133,15 +131,6 @@ const About = ({ setActivePage }) => {
                 >
                     <Icons />
             </motion.div>
-            {/* <div>
-                <img
-                    alt="Color accent for the About page"
-                    className="
-                                hidden lg:block absolute bottom-0 left-0
-                            "
-                    src={`${(darkTheme ? accentDarkAbout : accentLightAbout)}`}
-                />
-            </div> */}
         </section>
     );
 };

@@ -2,8 +2,6 @@ import Project from '../components/Project';
 import petServicesIcon from '../assets/projects/pet-services-icon.png';
 import fitnessGramIcon from '../assets/projects/fitnessgram-icon.png';
 import sousChefIcon from '../assets/projects/sous-chef-icon.png';
-import accentLightProjects from '../assets/color-accents/accent-projects-light.png';
-import accentDarkProjects from '../assets/color-accents/accent-projects-dark.png';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -24,15 +22,6 @@ const Projects = () => {
 
     return (
         <>
-            {/* <div>
-                <img
-                    alt="Color accent for the Projects page"
-                    className="
-                                 absolute left-0 transform hidden lg:block
-                            "
-                    src={`${(darkTheme ? accentDarkProjects : accentLightProjects)}`}
-                />
-            </div> */}
             <section id="projects" className="pt-48 pb-36">
                 {/* HEADER */}
                 <motion.div

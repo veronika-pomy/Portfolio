@@ -55,7 +55,7 @@ const AppContainer = () => {
               </div>
             </div>
           </div>
-  )
+  );
 }
 
 export default AppContainer;
