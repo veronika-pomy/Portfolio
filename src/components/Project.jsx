@@ -30,7 +30,7 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
             className="relative m-12 md:w-3/6 lg:w-3/6 xl:w-full 2xl:w-5/6"
         >
             <div className={`${overlayStyle}` + (darkTheme ? ` bg-blue text-dark` : ` bg-gold text-light`)}>
-                <p className="text-2xl xl:text-sm font-crimson">
+                <p className="text-2xl xl:text-sm font-crimson5">
                     <a
                         href={deployed}
                         target="_blank" 
@@ -64,9 +64,9 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
                     alt={iconAlt}
                     src={`${projectIcon}`}
                     className={darkTheme ? 
-                        "invert-[.64] sepia-[.15] saturate-[1.95] hue-rotate-[154deg] brightness-[.88] contrast-[.85]" 
+                        "invert-[.64] sepia-[.15] saturate-[1.95] hue-rotate-[154deg] brightness-[.88] contrast-[.85] p-6" 
                     : 
-                        "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81]"}
+                        "invert-[.12] sepia-[.02] saturate-[39.35] hue-rotate-[169deg] brightness-[.95] contrast-[.81] p-6"}
                 />
             </div>
         </motion.div>

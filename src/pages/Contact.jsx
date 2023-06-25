@@ -79,7 +79,7 @@ const Contact = ( ) => {
                         `}
                         type="text"
                         placeholder="Name"
-                        name="user_name"
+                        name="name"
                         // setting how to register input and valdiate it using react hook form
                         {...register("name",
                             {
@@ -102,7 +102,7 @@ const Contact = ( ) => {
                             w-full border-2 p-3 mt-2 font-muktaam text-lg rounded
                         `}
                         type="text"
-                        name="user_email"
+                        name="email"
                         placeholder="Email"
                         {...register("email",
                             {
