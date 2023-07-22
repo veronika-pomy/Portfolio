@@ -21,6 +21,7 @@ const AppContainer = () => {
 
   const favicon = document.getElementById('favicon');
 
+  // change favicon path based on theme
   darkTheme ? favicon.href = '/Portfolio/favicon-dark.ico' : favicon.href = '/Portfolio/favicon-light.ico';
 
   // handle scrolling page down, navbar appearance
