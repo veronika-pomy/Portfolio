@@ -50,7 +50,7 @@ If you have any questions regarding this project, please don't hesitate to conta
 ### Project Icons from Flaticon
 
 - [Author: Eideticmemo](https://www.flaticon.com/authors/eideticmemo)
-- [Auther: Freepik](https://www.flaticon.com/authors/freepik)
+- [Author: Freepik](https://www.flaticon.com/authors/freepik)
 
 ### Google Fonts
 
