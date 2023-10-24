@@ -62,7 +62,7 @@ const Projects = () => {
                         {/* child behaves based on what it detect from parent el */}
                         <Project 
                             projectIcon={hikeIcon}
-                            iconAlt={'Landing page for Sous Chef web app with a search bar to enter a desired dish'}
+                            iconAlt={'Landing page for a hike planning app'}
                             name={'Hike'}
                             description={'A MERN-based hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
                             deployed={'https://hike-app-60979479bbde.herokuapp.com/'}
