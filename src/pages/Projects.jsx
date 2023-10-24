@@ -1,7 +1,7 @@
 import Project from '../components/Project';
-import petServicesIcon from '../assets/projects/pet-services-icon.png';
-import fitnessGramIcon from '../assets/projects/fitnessgram-icon.png';
-import sousChefIcon from '../assets/projects/sous-chef-icon.png';
+import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
+import fitnessGramIcon from '../assets/projects/fitnessgram-icon.jpg';
+import hikeIcon from '../assets/projects/hike-icon.jpg';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -61,7 +61,7 @@ const Projects = () => {
                     >
                         {/* child behaves based on what it detect from parent el */}
                         <Project 
-                            projectIcon={HikeIcon}
+                            projectIcon={hikeIcon}
                             iconAlt={'Landing page for Sous Chef web app with a search bar to enter a desired dish'}
                             name={'Hike'}
                             description={'A MERN-based hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
