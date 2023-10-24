@@ -1,7 +1,7 @@
 import Project from '../components/Project';
-import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
-import fitnessGramIcon from '../assets/projects/fitnessgram-icon.jpg';
-import hikeIcon from '../assets/projects/hike-icon.jpg';
+import petServicesIcon from '';
+import fitnessGramIcon from '';
+import hikeIcon from '';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
