@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.43fe4503.css",
-    "main.js": "/Portfolio/static/js/main.c90446c5.js",
+    "main.js": "/Portfolio/static/js/main.c9894005.js",
     "static/media/profile-photo.jpg": "/Portfolio/static/media/profile-photo.2d0720551cc48f626bcb.jpg",
+    "static/media/hike-icon.jpg": "/Portfolio/static/media/hike-icon.f9678c75ad2e8fd53c0c.jpg",
     "static/media/veronika-pomyateeva-resume-2023.pdf": "/Portfolio/static/media/veronika-pomyateeva-resume-2023.cb375ee96a7f158b3ef9.pdf",
-    "static/media/sous-chef-icon.png": "/Portfolio/static/media/sous-chef-icon.f80643c387315e3dc765.png",
-    "static/media/pet-services-icon.png": "/Portfolio/static/media/pet-services-icon.8e4f3e8c2b5f027548bc.png",
-    "static/media/fitnessgram-icon.png": "/Portfolio/static/media/fitnessgram-icon.dc815c46a616b390299c.png",
+    "static/media/pet-services-icon.jpg": "/Portfolio/static/media/pet-services-icon.7f7e3ea9289b12ed2fe9.jpg",
+    "static/media/fitnessgram-icon.jpg": "/Portfolio/static/media/fitnessgram-icon.67db4104a7789752c248.jpg",
     "index.html": "/Portfolio/index.html",
     "main.43fe4503.css.map": "/Portfolio/static/css/main.43fe4503.css.map",
-    "main.c90446c5.js.map": "/Portfolio/static/js/main.c90446c5.js.map"
+    "main.c9894005.js.map": "/Portfolio/static/js/main.c9894005.js.map"
   },
   "entrypoints": [
     "static/css/main.43fe4503.css",
-    "static/js/main.c90446c5.js"
+    "static/js/main.c9894005.js"
   ]
 }
