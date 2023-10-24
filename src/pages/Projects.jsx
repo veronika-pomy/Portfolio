@@ -1,7 +1,7 @@
 import Project from '../components/Project';
-import petServicesIcon from '';
-import fitnessGramIcon from '';
-import hikeIcon from '';
+// import petServicesIcon from '';
+// import fitnessGramIcon from '';
+// import hikeIcon from '';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -60,7 +60,7 @@ const Projects = () => {
                         }
                     >
                         {/* child behaves based on what it detect from parent el */}
-                        <Project 
+                        {/* <Project 
                             projectIcon={hikeIcon}
                             iconAlt={'Landing page for a hike planning app'}
                             name={'Hike'}
@@ -85,7 +85,7 @@ const Projects = () => {
                             description={'Social media application built with Node, Express and MySQL. Styled with Bootstrap.'}
                             deployed={'https://fitnessgram.herokuapp.com/login'}
                             ghub={'https://github.com/veronika-pomy/FitnessGram'} 
-                        />
+                        /> */}
                     </motion.div>
                 </div>      
             </section>
