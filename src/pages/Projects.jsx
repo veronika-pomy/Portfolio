@@ -61,6 +61,15 @@ const Projects = () => {
                     >
                         {/* child behaves based on what it detect from parent el */}
                         <Project 
+                            projectIcon={HikeIcon}
+                            iconAlt={'Landing page for Sous Chef web app with a search bar to enter a desired dish'}
+                            name={'Hike'}
+                            description={'A MERN-based hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
+                            deployed={'https://hike-app-60979479bbde.herokuapp.com/'}
+                            ghub={'https://github.com/veronika-pomy/Hike'} 
+                        />
+
+                        <Project 
                             projectIcon={petServicesIcon}
                             iconAlt={'Landing page for Pet Services web app featuring a map, a dog and a cat, and a link to log in or create an account'}
                             name={'Pet Services'}
@@ -76,15 +85,6 @@ const Projects = () => {
                             description={'Social media application built with Node, Express and MySQL. Styled with Bootstrap.'}
                             deployed={'https://fitnessgram.herokuapp.com/login'}
                             ghub={'https://github.com/veronika-pomy/FitnessGram'} 
-                        />
-
-                        <Project 
-                            projectIcon={sousChefIcon}
-                            iconAlt={'Landing page for Sous Chef web app with a search bar to enter a desired dish'}
-                            name={'Sous Chef'}
-                            description={'JavaScript application utilizes YouTube and Calorie Ninja APIs.'}
-                            deployed={'https://veronika-pomy.github.io/Sous-Chef/'}
-                            ghub={'https://github.com/veronika-pomy/Sous-Chef'} 
                         />
                     </motion.div>
                 </div>      
