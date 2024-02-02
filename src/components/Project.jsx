@@ -20,7 +20,7 @@ import { useThemeContext } from '../hooks/useThemeContext';
 // style overlay over project el on hover (text over image)
 const overlayStyle = `absolute h-full w-full opacity-0 hover:opacity-100 transition duration-500 z-30 flex flex-col justify-center items-center text-center p-10 md:p-16 `;
 
-const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
+const Project = ({ projectIcon, iconAlt, name, description, deployed, github }) => {
   
   const { darkTheme } = useThemeContext();
 
@@ -35,7 +35,7 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
                         href={deployed}
                         target="_blank" 
                         rel="noreferrer" 
-                        className="underline"
+                        className="hover:underline underline-offset-2 decoration-2"
                     >
                         {name}
                     </a>  
@@ -49,7 +49,7 @@ const Project = ({projectIcon, iconAlt, name, description, deployed, ghub}) => {
                 <div className="flex items-center ">
                     <a
                         className="hover:opacity-50 selftransition duration-500"
-                        href={ghub}
+                        href={github}
                         target="_blank" 
                         rel="noreferrer"
                     >

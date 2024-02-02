@@ -6,16 +6,16 @@ import { RiCss3Line } from "react-icons/ri";
 
 import {
     SiJavascript,
+    SiTypescript,
     SiReact,
     SiNodedotjs,
     SiExpress,
     SiGraphql,
     SiMongodb,
+    SiPrisma,
     SiRedux,
     SiTailwindcss,
     SiBootstrap,
-    SiWebpack,
-    SiHandlebarsdotjs,
 } from "react-icons/si";
 
 import { GrMysql } from "react-icons/gr";
@@ -78,12 +78,17 @@ const Resume = () => {
                     <li
                         className="p-6 justify-self-center"
                     >
+                        <SiReact size={36} />
+                    </li>
+                    <li
+                        className="p-6 justify-self-center"
+                    >
                         <SiJavascript size={36} />
                     </li>
                     <li
                         className="p-6 justify-self-center"
                     >
-                        <RiCss3Line size={36} />
+                        <SiTypescript size={36} />
                     </li>
                     <li
                         className="p-6 justify-self-center"
@@ -93,7 +98,7 @@ const Resume = () => {
                     <li
                         className="p-6 justify-self-center"
                     >
-                        <SiReact size={36} />
+                        <RiCss3Line size={36} />
                     </li>
                     <li
                         className="p-6 justify-self-center"
@@ -105,11 +110,7 @@ const Resume = () => {
                     >
                         <SiExpress size={36} />
                     </li>
-                    <li
-                        className="p-6 justify-self-center"
-                    >
-                        <SiGraphql size={36} />
-                    </li>
+                    
                     <li
                         className="p-6 justify-self-center"                
                     >
@@ -119,6 +120,16 @@ const Resume = () => {
                         className="p-6 justify-self-center"
                     >
                         <SiMongodb size={36} />
+                    </li>
+                    <li
+                        className="p-6 justify-self-center"
+                    >
+                        <SiPrisma size={36} />
+                    </li>
+                    <li
+                        className="p-6 justify-self-center"
+                    >
+                        <SiGraphql size={36} />
                     </li>
                     <li
                         className="p-6 justify-self-center"
@@ -134,16 +145,6 @@ const Resume = () => {
                         className="p-6 justify-self-center"
                     >
                         <SiBootstrap size={36} />
-                    </li>
-                    <li
-                        className="p-6 justify-self-center"
-                    >
-                        <SiWebpack size={36} />
-                    </li>
-                    <li
-                        className="p-6 justify-self-center"
-                    >
-                        <SiHandlebarsdotjs size={36} />
                     </li>
                 </ul>
                 <div

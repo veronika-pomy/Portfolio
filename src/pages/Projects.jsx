@@ -1,7 +1,8 @@
 import Project from '../components/Project';
 import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
-import fitnessGramIcon from '../assets/projects/fitnessgram-icon.jpg';
+import personalTrainerIcon from '../assets/projects/personal-trainer-icon.jpg';
 import hikeIcon from '../assets/projects/hike-icon.jpg';
+import issueTrackerIcon from '../assets/projects/issue-tracker-icon.jpg';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -15,6 +16,42 @@ const container = {
         },
     },
 };
+
+// TODO: redo the text
+const projects = [
+    {
+        name: 'Hike',
+        projectIcon: hikeIcon,
+        iconAlt: 'Landing page for a hike planning app',
+        description:'A MERN-based hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.',
+        deployed: 'https://hike-app-60979479bbde.herokuapp.com',
+        github: 'https://github.com/veronika-pomy/Hike',
+    },
+    {
+        name: 'Issue Tracker',
+        projectIcon: 'https://veronika-pomy.github.io/Personal-Trainer-Website/',
+        iconAlt: 'Landing page for an Issue Tracker Next app',
+        description: 'A Next/MySQL issue tracker for tracking team progress and facilitating collaboration.',
+        deployed: 'https://issue-tracker-azure-nine.vercel.app',
+        github: 'https://github.com/veronika-pomy/Issue-Tracker',
+    },
+    {
+        name: 'Personal Trainer Website',
+        projectIcon: personalTrainerIcon,
+        iconAlt: 'Landing page for a Personal Trainer portfolio website',
+        description: 'A front-end React portfolio website for a personal trainer.',
+        deployed: 'https://veronika-pomy.github.io/Personal-Trainer-Website',
+        github: 'https://github.com/veronika-pomy/Personal-Trainer-Website',
+    },
+    {
+        name: 'Pet Services',
+        projectIcon: petServicesIcon,
+        iconAlt: 'Landing page for Pet Services web app featuring a map, a dog and a cat, and a link to log in or create an account',
+        description:'MERN application uses Apollo/GraphQL for backend and Tailwind for styling.',
+        deployed: 'https://pet-services.herokuapp.com',
+        github: 'https://github.com/dltorrise/Pet-Services',
+    },
+];
 
 const Projects = () => {
 
@@ -47,9 +84,7 @@ const Projects = () => {
                 </ motion.div>
                 {/* PROJECTS */}
                 <div className="flex flex-col xl:flex-row justify-center">
-                    
                     {/* set grid system for sceens above small to align project screenshots */}
-                    
                     <motion.div
                         className="xl:grid xl:grid-cols-3 flex flex-col place-items-center"
                         initial="hidden"
@@ -64,27 +99,33 @@ const Projects = () => {
                             projectIcon={hikeIcon}
                             iconAlt={'Landing page for a hike planning app'}
                             name={'Hike'}
-                            description={'A MERN-based hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
+                            description={'A MERN hike planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
                             deployed={'https://hike-app-60979479bbde.herokuapp.com/'}
-                            ghub={'https://github.com/veronika-pomy/Hike'} 
+                            github={'https://github.com/veronika-pomy/Hike'} 
                         />
-
+                        <Project 
+                            projectIcon={issueTrackerIcon}
+                            iconAlt={'Landing page for an Issue Tracker Next app'}
+                            name={'Issue Tracker'}
+                            description={'A Next/MySQL issue tracker for managing team progress and facilitating collaboration.'}
+                            deployed={'https://issue-tracker-azure-nine.vercel.app'}
+                            github={'https://github.com/veronika-pomy/Issue-Tracker'} 
+                        />
+                        <Project 
+                            projectIcon={personalTrainerIcon}
+                            iconAlt={'Landing page for a Personal Trainer portfolio website'}
+                            name={'Personal Trainer Website'}
+                            description={'A front-end React portfolio website for a personal trainer.'}
+                            deployed={'https://veronika-pomy.github.io/Personal-Trainer-Website'}
+                            github={'https://github.com/veronika-pomy/Personal-Trainer-Website'} 
+                        />
                         <Project 
                             projectIcon={petServicesIcon}
                             iconAlt={'Landing page for Pet Services web app featuring a map, a dog and a cat, and a link to log in or create an account'}
                             name={'Pet Services'}
-                            description={'MERN application uses Apollo/GraphQL for backend and Tailwind for styling.'}
+                            description={'A MERN application uses Apollo/GraphQL for backend and Tailwind for styling.'}
                             deployed={'https://pet-services.herokuapp.com/'}
-                            ghub={'https://github.com/dltorrise/Pet-Services'} 
-                        />
-
-                        <Project 
-                            projectIcon={fitnessGramIcon}
-                            iconAlt={'Login and Signup page for FitnessGram web app'}
-                            name={'FitnessGram'}
-                            description={'Social media application built with Node, Express and MySQL. Styled with Bootstrap.'}
-                            deployed={'https://fitnessgram.herokuapp.com/login'}
-                            ghub={'https://github.com/veronika-pomy/FitnessGram'} 
+                            github={'https://github.com/dltorrise/Pet-Services'} 
                         />
                     </motion.div>
                 </div>      
