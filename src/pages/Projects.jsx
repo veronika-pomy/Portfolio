@@ -1,8 +1,11 @@
 import Project from '../components/Project';
+import ProjectSolidCover from '../components/ProjectSolidCover';
 import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
 import personalTrainerIcon from '../assets/projects/personal-trainer-icon.jpg';
 import hikeIcon from '../assets/projects/hike-icon.jpg';
 import issueTrackerIcon from '../assets/projects/issue-tracker-icon.jpg';
+import projectBlue from '../assets/projects/project-blue.jpg';
+import projectGold from '../assets/projects/project-gold.jpg';
 
 import { motion } from "framer-motion";
 import { useThemeContext } from '../hooks/useThemeContext';
@@ -59,7 +62,7 @@ const Projects = () => {
 
     return (
         <>
-            <section id="projects" className="pt-48 pb-36">
+            <section id="projects" className="pt-48 pb-10">
                 {/* HEADER */}
                 <motion.div
                     className=" mx-auto text-center"
@@ -95,6 +98,10 @@ const Projects = () => {
                         }
                     >
                         {/* child behaves based on what it detect from parent el */}
+                        <ProjectSolidCover
+                            projectIcon={darkTheme ? projectBlue : projectGold}
+                            iconAlt={'Solid blank cover for a future project'}
+                        />
                         <Project 
                             projectIcon={hikeIcon}
                             iconAlt={'Landing page for a hike planning app'}
@@ -126,6 +133,10 @@ const Projects = () => {
                             description={'A MERN application uses Apollo/GraphQL for backend and Tailwind for styling.'}
                             deployed={'https://pet-services.herokuapp.com/'}
                             github={'https://github.com/dltorrise/Pet-Services'} 
+                        />
+                        <ProjectSolidCover
+                            projectIcon={darkTheme ? projectBlue : projectGold}
+                            iconAlt={'Solid blank cover for a future project'}
                         />
                     </motion.div>
                 </div>      
