@@ -16,7 +16,7 @@ const ProjectSolidCover = ({ projectIcon, iconAlt }) => {
   return (
     <motion.div
         variants={projectTransition}
-        className="relative m-12 md:w-3/6 lg:w-3/6 xl:w-full 2xl:w-5/6"
+        className="relative m-12 md:w-3/6 lg:w-3/6 xl:w-full 2xl:w-5/6 hidden lg:block"
     >
     <div
         className="flex justify-center"
