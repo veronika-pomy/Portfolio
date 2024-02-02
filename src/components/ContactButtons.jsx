@@ -9,7 +9,7 @@ const ContactButtons = ({ setActivePage }) => {
 
     return (
     <motion.div
-        className="flex flex-col md:flex-row mt-5 justify-center items-center lg:justify-start gap-x-2"
+        className="flex flex-col md:flex-row mt-5 gap-x-2 justify-center items-center lg:justify-start"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
