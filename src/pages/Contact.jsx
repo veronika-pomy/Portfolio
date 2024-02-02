@@ -90,9 +90,9 @@ const Contact = ( ) => {
                     {/* ERROR CONDITIONAL  */}
                     {errors.name && (
                         <p
-                            className="mt-1"
+                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
                         >
-                            {errors.name.type === "required" && "This field is required."}
+                            {errors.name.type === "required" && "Name is required."}
                         </p>
                     )
                     }
@@ -114,9 +114,9 @@ const Contact = ( ) => {
                     />
                     {errors.email && (
                         <p
-                            className="mt-1"
+                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
                         >
-                            {errors.email.type === "required" && "This field is required."}
+                            {errors.email.type === "required" && "Email is required."}
                             {errors.email.type === "pattern" && "Invalid email. Please try again."}
                         </p>
                     )
@@ -140,9 +140,9 @@ const Contact = ( ) => {
                     />
                     {errors.message && (
                         <p
-                            className="mt-1"
+                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
                         >
-                            {errors.message.type === "required" && "This field is required."}
+                            {errors.message.type === "required" && "Message is required."}
                             {errors.message.type === "maxLength" && "You exeeded the maximum number of characters please try again."}
                         </p>
                     )

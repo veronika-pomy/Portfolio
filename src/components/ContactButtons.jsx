@@ -28,7 +28,7 @@ const ContactButtons = ({ setActivePage }) => {
         onClick={() => setActivePage('contact')}
         href="#contact"
     >
-        Get in touch
+        Message
     </AnchorLink>
     {/* Email Option */}
     <a
@@ -41,7 +41,7 @@ const ContactButtons = ({ setActivePage }) => {
                     transition duration-500 w-full h-full flex items-center justify-center font-muktam text-xl px-10 py-4 border
             `}
         >
-                Email me
+                Email
         </div>
     </a>
     </motion.div>
