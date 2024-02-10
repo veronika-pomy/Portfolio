@@ -1,22 +1,22 @@
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import Icons from '../components/Icons';
-import { usePopUpContext } from '../hooks/usePopUpContext';
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const Contact = ( ) => {
 
     const { darkTheme } = useThemeContext();
 
-    // popup method
-    const { triggerPopUp } = usePopUpContext();
-
     // identify inputs, validate inputs, give errors if any
     const { register, trigger, reset, formState: { errors } } = useForm();
 
     const form = useRef();
+
+    // message send handlers
+    const [ messageSuccess, setMessageSuccess ] = useState(false);
+    const [ sendError, setSendError ] = useState(false);
 
     const sendEmail = async (e) => {
         e.preventDefault();
@@ -26,11 +26,11 @@ const Contact = ( ) => {
         } else {
             emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUB_KEY)
             .then((result) => {
-                console.log(result.text); 
-                triggerPopUp();
+                // console.log(result.text); 
+                setMessageSuccess(true);
                 reset();
             }, (error) => {
-                console.log(error.text);
+                setSendError(true);
             });
         };
     };
@@ -89,7 +89,7 @@ const Contact = ( ) => {
                     {/* ERROR CONDITIONAL  */}
                     {errors.name && (
                         <p
-                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
+                            className={`mt-1 ${darkTheme ? 'text-errorDark' : 'text-red-900'}`}
                         >
                             {errors.name.type === "required" && "Name is required."}
                         </p>
@@ -113,7 +113,7 @@ const Contact = ( ) => {
                     />
                     {errors.email && (
                         <p
-                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
+                            className={`mt-1 ${darkTheme ? 'text-errorDark' : 'text-red-900'}`}
                         >
                             {errors.email.type === "required" && "Email is required."}
                             {errors.email.type === "pattern" && "Invalid email. Please try again."}
@@ -139,7 +139,7 @@ const Contact = ( ) => {
                     />
                     {errors.message && (
                         <p
-                            className={`mt-1 ${darkTheme ? 'text-blue' : 'text-red-900'}`}
+                            className={`mt-1 ${darkTheme ? 'text-errorDark' : 'text-red-900'}`}
                         >
                             {errors.message.type === "required" && "Message is required."}
                             {errors.message.type === "maxLength" && "You exeeded the maximum number of characters please try again."}
@@ -179,6 +179,22 @@ const Contact = ( ) => {
                         </div>
                     </div>
                 </form>
+                {/* message success */}
+                {messageSuccess && (
+                        <p
+                            className={`mt-5 ${darkTheme ? 'text-light' : 'text-dark'}`}
+                        >
+                            Thank you for your message! I'll be in touch shortly.
+                        </p>
+                )}
+                {/* send error handling */}
+                {sendError && (
+                        <p
+                            className={`mt-5 ${darkTheme ? 'text-errorDark' : 'text-red-900'}`}
+                        >
+                            Failed to send message. Please try again.
+                        </p>
+                )}
             </motion.div>
         </section>
       );

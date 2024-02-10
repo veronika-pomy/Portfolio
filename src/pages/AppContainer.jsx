@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import PopUp from '../components/PopUp';
 import { useThemeContext } from '../hooks/useThemeContext';
 import About from './About';
 import Contact from './Contact';
@@ -43,7 +42,6 @@ const AppContainer = () => {
               activePage={activePage}
               setActivePage={setActivePage}
             />
-            <PopUp />
             <div className="w-4/6 mx-auto">
               <div className="w-full mx-auto mb-1">
                 <About setActivePage={setActivePage} />
