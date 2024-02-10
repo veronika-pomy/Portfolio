@@ -1,9 +1,8 @@
 import ThemeSwitch from "../components/ThemeSwitch";
 // icons for opening and closing navigation when on mobile
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { useThemeContext } from '../hooks/useThemeContext';
 

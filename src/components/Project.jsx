@@ -1,6 +1,5 @@
-import { AiFillGithub } from "react-icons/ai";
-
 import { motion } from "framer-motion";
+import { AiFillGithub } from "react-icons/ai";
 import { useThemeContext } from '../hooks/useThemeContext';
 
 // specify transition for a single project child
@@ -8,7 +7,7 @@ import { useThemeContext } from '../hooks/useThemeContext';
     // visible is final state item for each child
     const projectTransition = {
       hidden: { 
-          opacity: 0, 
+          opacity: 1, 
           scale: 0.8
       },
       visible: {
@@ -35,17 +34,15 @@ const Project = ({ projectIcon, iconAlt, name, description, deployed, github }) 
                         href={deployed}
                         target="_blank" 
                         rel="noreferrer" 
-                        className="hover:underline underline-offset-2 decoration-2"
+                        className={deployed && 'hover:underline underline-offset-2 decoration-2'}
                     >
                         {name}
                     </a>  
                 </p>
-                {
-
-                }
                 <p className="mt-3 mb-3 py-0.5 font-muktaam hidden xs:block">
                     {description}
                 </p>
+                {github &&
                 <div className="flex items-center ">
                     <a
                         className="hover:opacity-50 selftransition duration-500"
@@ -55,7 +52,7 @@ const Project = ({ projectIcon, iconAlt, name, description, deployed, github }) 
                     >
                         <AiFillGithub size={28} />
                     </a>
-                </div>
+                </div>}
             </div>
             <div
                 className="flex justify-center"

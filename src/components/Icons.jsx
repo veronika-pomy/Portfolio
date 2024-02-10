@@ -1,4 +1,4 @@
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const SocialIcons = () => {
   return (
@@ -11,7 +11,7 @@ const SocialIcons = () => {
         target="_blank" 
         rel="noreferrer"
       >
-        <AiFillLinkedin size={48} />
+        <AiFillLinkedin size={44} />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -19,7 +19,7 @@ const SocialIcons = () => {
         target="_blank" 
         rel="noreferrer"
       >
-        <AiFillGithub size={48} />
+        <AiFillGithub size={44} />
       </a>
       
     </div>

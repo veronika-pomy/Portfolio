@@ -1,9 +1,7 @@
-import { AiOutlineClose } from 'react-icons/ai';
-
-import { useThemeContext } from '../hooks/useThemeContext';
-import { usePopUpContext } from '../hooks/usePopUpContext';
-
 import React, { useEffect } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
+import { usePopUpContext } from '../hooks/usePopUpContext';
+import { useThemeContext } from '../hooks/useThemeContext';
 
 const PopUp = ( ) => {
 

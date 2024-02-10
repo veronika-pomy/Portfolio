@@ -1,12 +1,11 @@
-import NavBar from './NavBar';
+import { useEffect, useState } from 'react';
+import PopUp from '../components/PopUp';
+import { useThemeContext } from '../hooks/useThemeContext';
 import About from './About';
+import Contact from './Contact';
+import NavBar from './NavBar';
 import Projects from './Projects';
 import Resume from './Resume';
-import Contact from './Contact';
-import PopUp from '../components/PopUp';
-
-import { useEffect, useState } from 'react';
-import { useThemeContext } from '../hooks/useThemeContext';
 
 const AppContainer = () => {
     

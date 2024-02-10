@@ -1,8 +1,8 @@
-import Icons from '../components/Icons';
-import profileImage from '../assets/profile-photo.jpg';
 import { motion } from 'framer-motion';
-import { useThemeContext } from '../hooks/useThemeContext';
+import profileImage from '../assets/profile-photo.png';
 import ContactButtons from '../components/ContactButtons';
+import Icons from '../components/Icons';
+import { useThemeContext } from '../hooks/useThemeContext';
 
 const About = ({ setActivePage }) => {
 

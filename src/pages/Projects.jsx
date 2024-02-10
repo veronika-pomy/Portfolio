@@ -1,13 +1,11 @@
-import Project from '../components/Project';
-import ProjectSolidCover from '../components/ProjectSolidCover';
-import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
-import personalTrainerIcon from '../assets/projects/personal-trainer-icon.jpg';
+import { motion } from "framer-motion";
+import fashinStoreIcon from '../assets/projects/fashion-store-icon.jpg';
+import personalTrainerIcon from '../assets/projects/fitness-portfolio-icon.jpg';
 import hikeIcon from '../assets/projects/hike-icon.jpg';
 import issueTrackerIcon from '../assets/projects/issue-tracker-icon.jpg';
-import projectBlue from '../assets/projects/project-blue.jpg';
-import projectGold from '../assets/projects/project-gold.jpg';
-
-import { motion } from "framer-motion";
+import mediaPortfolioIcon from '../assets/projects/media-portfolio-icon.jpg';
+import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
+import Project from '../components/Project';
 import { useThemeContext } from '../hooks/useThemeContext';
 
 // abstract animations out to make sure transitions happen for each child (project) one after another
@@ -61,11 +59,6 @@ const Projects = () => {
                             container
                         }
                     >
-                        {/* child behaves based on what it detect from parent el */}
-                        <ProjectSolidCover
-                            projectIcon={darkTheme ? projectBlue : projectGold}
-                            iconAlt={'Solid blank cover for a future project'}
-                        />
                         <Project 
                             projectIcon={hikeIcon}
                             iconAlt={'Cover image for a hike planning app'}
@@ -84,8 +77,8 @@ const Projects = () => {
                         />
                         <Project 
                             projectIcon={personalTrainerIcon}
-                            iconAlt={'Cover image for a Personal Trainer portfolio website'}
-                            name={'Personal Trainer Website'}
+                            iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
+                            name={'Fitness Portfolio'}
                             description={'A front-end React portfolio website for a personal trainer.'}
                             deployed={'https://veronika-pomy.github.io/Personal-Trainer-Website'}
                             github={'https://github.com/veronika-pomy/Personal-Trainer-Website'} 
@@ -94,13 +87,25 @@ const Projects = () => {
                             projectIcon={petServicesIcon}
                             iconAlt={'Cover image for Pet Services web app'}
                             name={'Pet Services'}
-                            description={'A MERN application uses Apollo/GraphQL for backend and Tailwind for styling.'}
+                            description={'A MERN application utilizes Apollo/GraphQL for backend and Tailwind for styling.'}
                             deployed={'https://pet-services.herokuapp.com/'}
                             github={'https://github.com/dltorrise/Pet-Services'} 
                         />
-                        <ProjectSolidCover
-                            projectIcon={darkTheme ? projectBlue : projectGold}
-                            iconAlt={'Solid blank cover for a future project'}
+                        <Project 
+                            projectIcon={mediaPortfolioIcon}
+                            iconAlt={'Cover image for a media portfolio'}
+                            name={'Coming soon'}
+                            // description={''}
+                            // deployed={''}
+                            // github={''} 
+                        />
+                        <Project 
+                            projectIcon={fashinStoreIcon}
+                            iconAlt={'Cover image for an online shopping app'}
+                            name={'Coming soon'}
+                            // description={''}
+                            // deployed={''}
+                            // github={''} 
                         />
                     </motion.div>
                 </div>      

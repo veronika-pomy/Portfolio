@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // setting breakpoint for screen resizing
 // hook tells when passed query matches screen size

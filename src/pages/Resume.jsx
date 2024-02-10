@@ -1,26 +1,21 @@
-import resume from "../assets/veronika-pomyateeva-resume-2023.pdf";
-
+import { motion } from "framer-motion";
 import { AiOutlineHtml5 } from "react-icons/ai";
-
+import { GrMysql } from "react-icons/gr";
 import { RiCss3Line } from "react-icons/ri";
-
 import {
-    SiJavascript,
-    SiTypescript,
-    SiReact,
-    SiNodedotjs,
+    SiBootstrap,
     SiExpress,
     SiGraphql,
+    SiJavascript,
     SiMongodb,
+    SiNodedotjs,
     SiPrisma,
+    SiReact,
     SiRedux,
     SiTailwindcss,
-    SiBootstrap,
+    SiTypescript,
 } from "react-icons/si";
-
-import { GrMysql } from "react-icons/gr";
-
-import { motion } from "framer-motion";
+import resume from "../assets/veronika-pomyateeva-resume-2023.pdf";
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const Resume = () => {

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gold: "#856e48",
+        gold: "#8d6542",
         dark: "#2d3033",
         light: "#f0f0f0",
         blue: "#7d9fb9",
@@ -35,3 +35,9 @@ module.exports = {
   plugins: [],
 }
 
+// Color choices 
+  // original gold #856e48
+  // light gold #967741
+  // dark gold #8d6542
+  // brown gold #a07445
+  // red gold #8c5a05

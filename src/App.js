@@ -1,7 +1,7 @@
 import AppContainer from './pages/AppContainer';
 // import context provider to make global state availabile to child components
-import ThemeContext from './hooks/useThemeContext';
 import PopUpContext from './hooks/usePopUpContext';
+import ThemeContext from './hooks/useThemeContext';
 
 function App() {
   return (

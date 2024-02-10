@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { motion } from 'framer-motion';
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const ContactButtons = ({ setActivePage }) => {

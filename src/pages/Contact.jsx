@@ -1,11 +1,10 @@
-import Icons from '../components/Icons';
-
-import { useRef } from 'react';
-import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
-import { useThemeContext } from '../hooks/useThemeContext';
+import { useRef } from 'react';
+import { useForm } from "react-hook-form";
+import Icons from '../components/Icons';
 import { usePopUpContext } from '../hooks/usePopUpContext';
+import { useThemeContext } from '../hooks/useThemeContext';
 
 const Contact = ( ) => {
 
