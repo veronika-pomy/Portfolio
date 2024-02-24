@@ -80,8 +80,8 @@ const Projects = () => {
                             iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
                             name={'Fitness Portfolio'}
                             description={'A front-end React portfolio website for a personal trainer.'}
-                            deployed={'https://veronika-pomy.github.io/Personal-Trainer-Website'}
-                            github={'https://github.com/veronika-pomy/Personal-Trainer-Website'} 
+                            deployed={'https://veronika-pomy.github.io/Fitness'}
+                            github={'https://github.com/veronika-pomy/Fitness'} 
                         />
                         <Project 
                             projectIcon={petServicesIcon}
