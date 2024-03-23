@@ -155,7 +155,7 @@ const Resume = () => {
                             md:mt-0
                             mb-12
                         "
-                    href={resume} 
+                    // href={resume} 
                     download="Veronika-Pomyateeva-Resume" 
                     target='_blank' 
                     rel="noreferrer"
