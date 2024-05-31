@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9f348a10.css",
-    "main.js": "/Portfolio/static/js/main.b72be463.js",
+    "main.css": "/Portfolio/static/css/main.f488eda3.css",
+    "main.js": "/Portfolio/static/js/main.735691c9.js",
     "static/media/profile-photo.png": "/Portfolio/static/media/profile-photo.aa148f21fe641674426a.png",
     "static/media/hike-icon.jpg": "/Portfolio/static/media/hike-icon.f9678c75ad2e8fd53c0c.jpg",
     "static/media/veronika-pomyateeva-resume-2023.pdf": "/Portfolio/static/media/veronika-pomyateeva-resume-2023.cb375ee96a7f158b3ef9.pdf",
@@ -11,11 +11,11 @@
     "static/media/fitness-portfolio-icon.jpg": "/Portfolio/static/media/fitness-portfolio-icon.67db4104a7789752c248.jpg",
     "static/media/issue-tracker-icon.jpg": "/Portfolio/static/media/issue-tracker-icon.e7ab222aa43bfdf9c952.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.9f348a10.css.map": "/Portfolio/static/css/main.9f348a10.css.map",
-    "main.b72be463.js.map": "/Portfolio/static/js/main.b72be463.js.map"
+    "main.f488eda3.css.map": "/Portfolio/static/css/main.f488eda3.css.map",
+    "main.735691c9.js.map": "/Portfolio/static/js/main.735691c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f348a10.css",
-    "static/js/main.b72be463.js"
+    "static/css/main.f488eda3.css",
+    "static/js/main.735691c9.js"
   ]
 }
