@@ -34,7 +34,7 @@ const Project = ({ projectIcon, iconAlt, name, description, deployed, github }) 
                         href={deployed}
                         target="_blank" 
                         rel="noreferrer" 
-                        className={deployed && 'hover:underline underline-offset-2 decoration-2'}
+                        className={deployed && 'underline hover:no-underline underline-offset-2 decoration-2'}
                     >
                         {name}
                     </a>  

@@ -60,28 +60,28 @@ const Projects = () => {
                         }
                     >
                         <Project 
+                            projectIcon={fashinStoreIcon}
+                            iconAlt={'Cover image for an online shopping app'}
+                            name={'Fashion Store'}
+                            description={'A MERN e-commerce application integrated with Stripe and styled with Bootstrap.'}
+                            deployed={'https://fashion-shop-66a46d161c61.herokuapp.com/'}
+                            github={'https://github.com/veronika-pomy/Fashion-Store'} 
+                        />
+                        <Project 
+                            projectIcon={issueTrackerIcon}
+                            iconAlt={'Cover image for an Issue Tracker Next app'}
+                            name={'Issue Tracker'}
+                            description={'A NextJS/MySQL application for managing team progress and facilitating collaboration.'}
+                            deployed={'https://issue-tracker-azure-nine.vercel.app'}
+                            github={'https://github.com/veronika-pomy/Issue-Tracker'} 
+                        />
+                        <Project 
                             projectIcon={hikeIcon}
                             iconAlt={'Cover image for a hike planning app'}
                             name={'Hike'}
                             description={'A MERN planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
                             deployed={'https://hike-app-60979479bbde.herokuapp.com'}
                             github={'https://github.com/veronika-pomy/Hike'} 
-                        />
-                        <Project 
-                            projectIcon={issueTrackerIcon}
-                            iconAlt={'Cover image for an Issue Tracker Next app'}
-                            name={'Issue Tracker'}
-                            description={'A Next/MySQL issue tracker for managing team progress and facilitating collaboration.'}
-                            deployed={'https://issue-tracker-azure-nine.vercel.app'}
-                            github={'https://github.com/veronika-pomy/Issue-Tracker'} 
-                        />
-                        <Project 
-                            projectIcon={personalTrainerIcon}
-                            iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
-                            name={'Fitness Portfolio'}
-                            description={'A front-end React portfolio website for a personal trainer.'}
-                            deployed={'https://veronika-pomy.github.io/Fitness'}
-                            github={'https://github.com/veronika-pomy/Fitness'} 
                         />
                         <Project 
                             projectIcon={petServicesIcon}
@@ -92,16 +92,16 @@ const Projects = () => {
                             github={'https://github.com/dltorrise/Pet-Services'} 
                         />
                         <Project 
-                            projectIcon={mediaPortfolioIcon}
-                            iconAlt={'Cover image for a media portfolio'}
-                            name={'Coming soon'}
-                            // description={''}
-                            // deployed={''}
-                            // github={''} 
+                            projectIcon={personalTrainerIcon}
+                            iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
+                            name={'Fitness Portfolio'}
+                            description={'A front-end React portfolio website for a personal trainer.'}
+                            deployed={'https://veronika-pomy.github.io/Fitness'}
+                            github={'https://github.com/veronika-pomy/Fitness'} 
                         />
                         <Project 
-                            projectIcon={fashinStoreIcon}
-                            iconAlt={'Cover image for an online shopping app'}
+                            projectIcon={mediaPortfolioIcon}
+                            iconAlt={'Cover image for a media portfolio'}
                             name={'Coming soon'}
                             // description={''}
                             // deployed={''}
