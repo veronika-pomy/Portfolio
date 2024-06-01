@@ -96,8 +96,8 @@ const Projects = () => {
                             iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
                             name={'Fitness Portfolio'}
                             description={'A front-end React portfolio website for a personal trainer.'}
-                            deployed={'https://veronika-pomy.github.io/Fitness'}
-                            github={'https://github.com/veronika-pomy/Fitness'} 
+                            deployed={'https://veronika-pomy.github.io/Fitness-Portfolio'}
+                            github={'https://github.com/veronika-pomy/Fitness-Portfolio'} 
                         />
                         <Project 
                             projectIcon={mediaPortfolioIcon}
