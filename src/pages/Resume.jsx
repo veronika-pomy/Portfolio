@@ -15,7 +15,7 @@ import {
     SiTailwindcss,
     SiTypescript,
 } from "react-icons/si";
-import resume from "../assets/veronika-pomyateeva-resume.pdf";
+import resume from "../assets/Veronika_Pomyateeva_Resume_2024.pdf";
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const Resume = () => {
@@ -156,7 +156,7 @@ const Resume = () => {
                             mb-12
                         "
                     href={resume} 
-                    download="Veronika-Pomyateeva-Resume" 
+                    download="Veronika_Pomyateeva_Resume_2024" 
                     target='_blank' 
                     rel="noreferrer"
                 >
