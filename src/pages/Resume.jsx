@@ -156,7 +156,7 @@ const Resume = () => {
                             mb-12
                         "
                     href={resume} 
-                    download="Veronika_Pomyateeva_Resume_2024" 
+                    download="Veronika_Pomyateeva_Full_Stack_Developer_Resume_2024" 
                     target='_blank' 
                     rel="noreferrer"
                 >
