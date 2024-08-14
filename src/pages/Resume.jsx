@@ -15,7 +15,7 @@ import {
     SiTailwindcss,
     SiTypescript,
 } from "react-icons/si";
-import resume from "../assets/Veronika_Pomyateeva_Resume_2024.pdf";
+import resume from "../assets/Veronika_Pomyateeva_Full_Stack_Developer_Resume_2024.pdf";
 import { useThemeContext } from '../hooks/useThemeContext';
 
 const Resume = () => {
