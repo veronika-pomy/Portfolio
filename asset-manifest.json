@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f488eda3.css",
-    "main.js": "/Portfolio/static/js/main.27de39b9.js",
+    "main.js": "/Portfolio/static/js/main.b46f3bd0.js",
     "static/media/profile-photo.png": "/Portfolio/static/media/profile-photo.aa148f21fe641674426a.png",
     "static/media/Veronika_Pomyateeva_Full_Stack_Developer_Resume_2024.pdf": "/Portfolio/static/media/Veronika_Pomyateeva_Full_Stack_Developer_Resume_2024.c085e9a6271d3aabbd3d.pdf",
     "static/media/hike-icon.jpg": "/Portfolio/static/media/hike-icon.f9678c75ad2e8fd53c0c.jpg",
     "static/media/fashion-store-icon.jpg": "/Portfolio/static/media/fashion-store-icon.35469208e17db9edc19f.jpg",
     "static/media/pet-services-icon.jpg": "/Portfolio/static/media/pet-services-icon.7f7e3ea9289b12ed2fe9.jpg",
-    "static/media/media-portfolio-icon.jpg": "/Portfolio/static/media/media-portfolio-icon.dc31492548fc2031d2ae.jpg",
     "static/media/fitness-portfolio-icon.jpg": "/Portfolio/static/media/fitness-portfolio-icon.67db4104a7789752c248.jpg",
+    "static/media/wordpress-website-icon.jpg": "/Portfolio/static/media/wordpress-website-icon.2fbe1b5b5be5aaa27a3b.jpg",
     "static/media/issue-tracker-icon.jpg": "/Portfolio/static/media/issue-tracker-icon.e7ab222aa43bfdf9c952.jpg",
     "index.html": "/Portfolio/index.html",
     "main.f488eda3.css.map": "/Portfolio/static/css/main.f488eda3.css.map",
-    "main.27de39b9.js.map": "/Portfolio/static/js/main.27de39b9.js.map"
+    "main.b46f3bd0.js.map": "/Portfolio/static/js/main.b46f3bd0.js.map"
   },
   "entrypoints": [
     "static/css/main.f488eda3.css",
-    "static/js/main.27de39b9.js"
+    "static/js/main.b46f3bd0.js"
   ]
 }
