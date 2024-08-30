@@ -3,8 +3,9 @@ import fashinStoreIcon from '../assets/projects/fashion-store-icon.jpg';
 import personalTrainerIcon from '../assets/projects/fitness-portfolio-icon.jpg';
 import hikeIcon from '../assets/projects/hike-icon.jpg';
 import issueTrackerIcon from '../assets/projects/issue-tracker-icon.jpg';
-import mediaPortfolioIcon from '../assets/projects/media-portfolio-icon.jpg';
+// import mediaPortfolioIcon from '../assets/projects/media-portfolio-icon.jpg';
 import petServicesIcon from '../assets/projects/pet-services-icon.jpg';
+import wordPressWebsiteIcon from '../assets/projects/wordpress-website-icon.jpg';
 import Project from '../components/Project';
 import { useThemeContext } from '../hooks/useThemeContext';
 
@@ -100,12 +101,12 @@ const Projects = () => {
                             github={'https://github.com/veronika-pomy/Fitness-Portfolio'} 
                         />
                         <Project 
-                            projectIcon={mediaPortfolioIcon}
-                            iconAlt={'Cover image for a media portfolio'}
-                            name={'Coming soon'}
-                            // description={''}
-                            // deployed={''}
-                            // github={''} 
+                            projectIcon={wordPressWebsiteIcon}
+                            iconAlt={'Cover image for an e-commerce webiste built with WordPress'}
+                            name={'WordPress Store'}
+                            description={'Demo WordPress e-commerce site with secure Stripe payments, SEO blog, and reviews.'}
+                            deployed={'https://drive.google.com/file/d/1l-Wnsz4WerdPObgmLh7VHDZ0eiVacIq9/view?usp=sharing'}
+                            github={'https://github.com/veronika-pomy/WordPress-E-commerce-Website'} 
                         />
                     </motion.div>
                 </div>      
