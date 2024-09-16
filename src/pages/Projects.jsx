@@ -105,7 +105,7 @@ const Projects = () => {
                             iconAlt={'Cover image for an e-commerce webiste built with WordPress'}
                             name={'WordPress Store'}
                             description={'Demo WordPress e-commerce site with secure Stripe payments, SEO blog, and reviews.'}
-                            deployed={'https://drive.google.com/file/d/1l-Wnsz4WerdPObgmLh7VHDZ0eiVacIq9/view?usp=sharing'}
+                            deployed={'https://xn--lumire-6ua.online/'}
                             github={'https://github.com/veronika-pomy/WordPress-E-commerce-Website'} 
                         />
                     </motion.div>
