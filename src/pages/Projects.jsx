@@ -61,12 +61,12 @@ const Projects = () => {
                         }
                     >
                         <Project 
-                            projectIcon={fashinStoreIcon}
-                            iconAlt={'Cover image for an online shopping app'}
-                            name={'Fashion Store'}
-                            description={'A MERN e-commerce application integrated with Stripe and styled with Bootstrap.'}
-                            deployed={'https://fashion-shop-66a46d161c61.herokuapp.com/'}
-                            github={'https://github.com/veronika-pomy/Fashion-Store'} 
+                            projectIcon={personalTrainerIcon}
+                            iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
+                            name={'Fitness Portfolio'}
+                            description={'A front-end React portfolio website for a personal trainer.'}
+                            deployed={'https://veronika-pomy.github.io/Fitness-Portfolio'}
+                            github={'https://github.com/veronika-pomy/Fitness-Portfolio'} 
                         />
                         <Project 
                             projectIcon={issueTrackerIcon}
@@ -77,11 +77,28 @@ const Projects = () => {
                             github={'https://github.com/veronika-pomy/Issue-Tracker'} 
                         />
                         <Project 
+                            projectIcon={wordPressWebsiteIcon}
+                            iconAlt={'Cover image for an e-commerce webiste built with WordPress'}
+                            name={'WordPress Store'}
+                            description={'Demo WordPress e-commerce site with secure Stripe payments, SEO blog, and reviews.'}
+                            deployed={'https://xn--lumire-6ua.online/'}
+                            github={'https://github.com/veronika-pomy/WordPress-E-commerce-Website'} 
+                        />
+                        <Project 
+                            projectIcon={fashinStoreIcon}
+                            iconAlt={'Cover image for an online shopping app'}
+                            name={'Fashion Store'}
+                            description={'A MERN e-commerce application integrated with Stripe and styled with Bootstrap.'}
+                            deployed={'https://drive.google.com/file/d/1-nKcFPdXGsY_77aaioHxfBc64_jHZyAq/view?usp=sharing'}
+                            github={'https://github.com/veronika-pomy/Fashion-Store'} 
+                        />
+                        
+                        <Project 
                             projectIcon={hikeIcon}
                             iconAlt={'Cover image for a hike planning app'}
                             name={'Hike'}
                             description={'A MERN planning app features a Chakra UI design, Google Maps, OpenWeather and YouTube APIs.'}
-                            deployed={'https://hike-app-60979479bbde.herokuapp.com'}
+                            deployed={'https://drive.google.com/file/d/1cUsPocsq5STcnjbRN7FEqXQPs6S0MhKG/view?usp=sharing'}
                             github={'https://github.com/veronika-pomy/Hike'} 
                         />
                         <Project 
@@ -89,24 +106,8 @@ const Projects = () => {
                             iconAlt={'Cover image for Pet Services web app'}
                             name={'Pet Services'}
                             description={'A MERN application utilizes Apollo/GraphQL for backend and Tailwind for styling.'}
-                            deployed={'https://pet-services.herokuapp.com/'}
+                            deployed={'https://drive.google.com/file/d/1plWcFzcrKx4MSTzs1D9FczIoSnP4g6tC/view?usp=sharing'}
                             github={'https://github.com/dltorrise/Pet-Services'} 
-                        />
-                        <Project 
-                            projectIcon={personalTrainerIcon}
-                            iconAlt={'Cover image for a Fitness Portfolio portfolio website'}
-                            name={'Fitness Portfolio'}
-                            description={'A front-end React portfolio website for a personal trainer.'}
-                            deployed={'https://veronika-pomy.github.io/Fitness-Portfolio'}
-                            github={'https://github.com/veronika-pomy/Fitness-Portfolio'} 
-                        />
-                        <Project 
-                            projectIcon={wordPressWebsiteIcon}
-                            iconAlt={'Cover image for an e-commerce webiste built with WordPress'}
-                            name={'WordPress Store'}
-                            description={'Demo WordPress e-commerce site with secure Stripe payments, SEO blog, and reviews.'}
-                            deployed={'https://xn--lumire-6ua.online/'}
-                            github={'https://github.com/veronika-pomy/WordPress-E-commerce-Website'} 
                         />
                     </motion.div>
                 </div>      
